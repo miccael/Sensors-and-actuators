@@ -1,0 +1,59 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega88"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m88def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\Debug\WS2801.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>WS2801.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>WS2801.map</FILE>
+  <FILE>WS2801.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Startup><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>33</LINE></Startup>
+  <Wait_Transmit0><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>37</LINE></Wait_Transmit0>
+  <Wait_Transmit1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>46</LINE></Wait_Transmit1>
+  <Wait_Transmit2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>54</LINE></Wait_Transmit2>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <start><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>92</LINE></start>
+  <sendmagenta><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>347</LINE></sendmagenta>
+  <sendcyan><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>319</LINE></sendcyan>
+  <sendblue><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>264</LINE></sendblue>
+  <sendgreen><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>236</LINE></sendgreen>
+  <sendyellow><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>292</LINE></sendyellow>
+  <sendred><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>208</LINE></sendred>
+  <Wait_Transmit3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>211</LINE></Wait_Transmit3>
+  <Wait_Transmit4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>220</LINE></Wait_Transmit4>
+  <Wait_Transmit5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>228</LINE></Wait_Transmit5>
+  <Wait_Transmit6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>239</LINE></Wait_Transmit6>
+  <Wait_Transmit7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>248</LINE></Wait_Transmit7>
+  <Wait_Transmit8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>256</LINE></Wait_Transmit8>
+  <Wait_Transmit9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>267</LINE></Wait_Transmit9>
+  <Wait_Transmit10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>276</LINE></Wait_Transmit10>
+  <Wait_Transmit11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>284</LINE></Wait_Transmit11>
+  <Wait_Transmit12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>295</LINE></Wait_Transmit12>
+  <Wait_Transmit13><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>304</LINE></Wait_Transmit13>
+  <Wait_Transmit14><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>312</LINE></Wait_Transmit14>
+  <Wait_Transmit15><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>322</LINE></Wait_Transmit15>
+  <Wait_Transmit16><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>331</LINE></Wait_Transmit16>
+  <Wait_Transmit17><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>339</LINE></Wait_Transmit17>
+  <Wait_Transmit18><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>350</LINE></Wait_Transmit18>
+  <Wait_Transmit19><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>359</LINE></Wait_Transmit19>
+  <Wait_Transmit20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\WS2801.asm</FILE><LINE>367</LINE></Wait_Transmit20>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2801\WS2801\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,71 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega328"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m328def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\Debug\TMP006.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>TMP006.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>TMP006.map</FILE>
+  <FILE>TMP006.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>600</LINE></LCD>
+  <TMP006Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>252</LINE></TMP006Write>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>69</LINE></main>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <TMP006Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>399</LINE></TMP006Read>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>181</LINE></LCDwrite>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1040</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>248</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>262</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>286</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>315</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>395</LINE></ERROR2>
+  <wait4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>343</LINE></wait4>
+  <wait5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>371</LINE></wait5>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>411</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>437</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>463</LINE></wait8>
+  <wait9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>488</LINE></wait9>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>596</LINE></ERROR3>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>513</LINE></wait10>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>537</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>566</LINE></wait12>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1202</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1248</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1138</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1092</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1175</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1118</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1123</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1126</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1141</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1152</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1170</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1178</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1228</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1233</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1236</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1251</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1262</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1280</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1285</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\TMP006\TMP006\TMP006.asm</FILE><LINE>1288</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

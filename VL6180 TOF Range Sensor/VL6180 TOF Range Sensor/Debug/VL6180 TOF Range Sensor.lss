@@ -1,0 +1,2760 @@
+
+AVRASM ver. 2.2.7  C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm Mon Mar 23 19:12:40 2020
+
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc'
+C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm(593): Including file 'C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\wait.asm'
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc'
+C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm(593): Including file 'C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\wait.asm'
+                                 
+                                 ;
+                                 
+                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATmega328P.xml **********
+                                 ;*************************************************************************
+                                 ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
+                                 ;* 
+                                 ;* Number            : AVR000
+                                 ;* File Name         : "m328Pdef.inc"
+                                 ;* Title             : Register/Bit Definitions for the ATmega328P
+                                 ;* Date              : 2011-02-09
+                                 ;* Version           : 2.35
+                                 ;* Support E-mail    : avr@atmel.com
+                                 ;* Target MCU        : ATmega328P
+                                 ;* 
+                                 ;* DESCRIPTION
+                                 ;* When including this file in the assembly program file, all I/O register 
+                                 ;* names and I/O register bit names appearing in the data book can be used.
+                                 ;* In addition, the six registers forming the three data pointers X, Y and 
+                                 ;* Z have been assigned names XL - ZH. Highest RAM address for Internal 
+                                 ;* SRAM is also defined 
+                                 ;* 
+                                 ;* The Register names are represented by their hexadecimal address.
+                                 ;* 
+                                 ;* The Register Bit names are represented by their bit number (0-7).
+                                 ;* 
+                                 ;* Please observe the difference in using the bit names with instructions
+                                 ;* such as "sbr"/"cbr" (set/clear bit in register) and "sbrs"/"sbrc"
+                                 ;* (skip if bit in register set/cleared). The following example illustrates
+                                 ;* this:
+                                 ;* 
+                                 ;* in    r16,PORTB             ;read PORTB latch
+                                 ;* sbr   r16,(1<<PB6)+(1<<PB5) ;set PB6 and PB5 (use masks, not bit#)
+                                 ;* out   PORTB,r16             ;output to PORTB
+                                 ;* 
+                                 ;* in    r16,TIFR              ;read the Timer Interrupt Flag Register
+                                 ;* sbrc  r16,TOV0              ;test the overflow flag (use bit#)
+                                 ;* rjmp  TOV0_is_set           ;jump if set
+                                 ;* ...                         ;otherwise do something else
+                                 ;*************************************************************************
+                                 
+                                 #ifndef _M328PDEF_INC_
+                                 #define _M328PDEF_INC_
+                                 
+                                 
+                                 #pragma partinc 0
+                                 
+                                 ; ***** SPECIFY DEVICE ***************************************************
+                                 .device ATmega328P
+                                 #pragma AVRPART ADMIN PART_NAME ATmega328P
+                                 .equ	SIGNATURE_000	= 0x1e
+                                 .equ	SIGNATURE_001	= 0x95
+                                 .equ	SIGNATURE_002	= 0x0f
+                                 
+                                 #pragma AVRPART CORE CORE_VERSION V2E
+                                 
+                                 
+                                 ; ***** I/O REGISTER DEFINITIONS *****************************************
+                                 ; NOTE:
+                                 ; Definitions marked "MEMORY MAPPED"are extended I/O ports
+                                 ; and cannot be used with IN/OUT instructions
+                                 .equ	UDR0	= 0xc6	; MEMORY MAPPED
+                                 .equ	UBRR0L	= 0xc4	; MEMORY MAPPED
+                                 .equ	UBRR0H	= 0xc5	; MEMORY MAPPED
+                                 .equ	UCSR0C	= 0xc2	; MEMORY MAPPED
+                                 .equ	UCSR0B	= 0xc1	; MEMORY MAPPED
+                                 .equ	UCSR0A	= 0xc0	; MEMORY MAPPED
+                                 .equ	TWAMR	= 0xbd	; MEMORY MAPPED
+                                 .equ	TWCR	= 0xbc	; MEMORY MAPPED
+                                 .equ	TWDR	= 0xbb	; MEMORY MAPPED
+                                 .equ	TWAR	= 0xba	; MEMORY MAPPED
+                                 .equ	TWSR	= 0xb9	; MEMORY MAPPED
+                                 .equ	TWBR	= 0xb8	; MEMORY MAPPED
+                                 .equ	ASSR	= 0xb6	; MEMORY MAPPED
+                                 .equ	OCR2B	= 0xb4	; MEMORY MAPPED
+                                 .equ	OCR2A	= 0xb3	; MEMORY MAPPED
+                                 .equ	TCNT2	= 0xb2	; MEMORY MAPPED
+                                 .equ	TCCR2B	= 0xb1	; MEMORY MAPPED
+                                 .equ	TCCR2A	= 0xb0	; MEMORY MAPPED
+                                 .equ	OCR1BL	= 0x8a	; MEMORY MAPPED
+                                 .equ	OCR1BH	= 0x8b	; MEMORY MAPPED
+                                 .equ	OCR1AL	= 0x88	; MEMORY MAPPED
+                                 .equ	OCR1AH	= 0x89	; MEMORY MAPPED
+                                 .equ	ICR1L	= 0x86	; MEMORY MAPPED
+                                 .equ	ICR1H	= 0x87	; MEMORY MAPPED
+                                 .equ	TCNT1L	= 0x84	; MEMORY MAPPED
+                                 .equ	TCNT1H	= 0x85	; MEMORY MAPPED
+                                 .equ	TCCR1C	= 0x82	; MEMORY MAPPED
+                                 .equ	TCCR1B	= 0x81	; MEMORY MAPPED
+                                 .equ	TCCR1A	= 0x80	; MEMORY MAPPED
+                                 .equ	DIDR1	= 0x7f	; MEMORY MAPPED
+                                 .equ	DIDR0	= 0x7e	; MEMORY MAPPED
+                                 .equ	ADMUX	= 0x7c	; MEMORY MAPPED
+                                 .equ	ADCSRB	= 0x7b	; MEMORY MAPPED
+                                 .equ	ADCSRA	= 0x7a	; MEMORY MAPPED
+                                 .equ	ADCH	= 0x79	; MEMORY MAPPED
+                                 .equ	ADCL	= 0x78	; MEMORY MAPPED
+                                 .equ	TIMSK2	= 0x70	; MEMORY MAPPED
+                                 .equ	TIMSK1	= 0x6f	; MEMORY MAPPED
+                                 .equ	TIMSK0	= 0x6e	; MEMORY MAPPED
+                                 .equ	PCMSK1	= 0x6c	; MEMORY MAPPED
+                                 .equ	PCMSK2	= 0x6d	; MEMORY MAPPED
+                                 .equ	PCMSK0	= 0x6b	; MEMORY MAPPED
+                                 .equ	EICRA	= 0x69	; MEMORY MAPPED
+                                 .equ	PCICR	= 0x68	; MEMORY MAPPED
+                                 .equ	OSCCAL	= 0x66	; MEMORY MAPPED
+                                 .equ	PRR	= 0x64	; MEMORY MAPPED
+                                 .equ	CLKPR	= 0x61	; MEMORY MAPPED
+                                 .equ	WDTCSR	= 0x60	; MEMORY MAPPED
+                                 .equ	SREG	= 0x3f
+                                 .equ	SPL	= 0x3d
+                                 .equ	SPH	= 0x3e
+                                 .equ	SPMCSR	= 0x37
+                                 .equ	MCUCR	= 0x35
+                                 .equ	MCUSR	= 0x34
+                                 .equ	SMCR	= 0x33
+                                 .equ	ACSR	= 0x30
+                                 .equ	SPDR	= 0x2e
+                                 .equ	SPSR	= 0x2d
+                                 .equ	SPCR	= 0x2c
+                                 .equ	GPIOR2	= 0x2b
+                                 .equ	GPIOR1	= 0x2a
+                                 .equ	OCR0B	= 0x28
+                                 .equ	OCR0A	= 0x27
+                                 .equ	TCNT0	= 0x26
+                                 .equ	TCCR0B	= 0x25
+                                 .equ	TCCR0A	= 0x24
+                                 .equ	GTCCR	= 0x23
+                                 .equ	EEARH	= 0x22
+                                 .equ	EEARL	= 0x21
+                                 .equ	EEDR	= 0x20
+                                 .equ	EECR	= 0x1f
+                                 .equ	GPIOR0	= 0x1e
+                                 .equ	EIMSK	= 0x1d
+                                 .equ	EIFR	= 0x1c
+                                 .equ	PCIFR	= 0x1b
+                                 .equ	TIFR2	= 0x17
+                                 .equ	TIFR1	= 0x16
+                                 .equ	TIFR0	= 0x15
+                                 .equ	PORTD	= 0x0b
+                                 .equ	DDRD	= 0x0a
+                                 .equ	PIND	= 0x09
+                                 .equ	PORTC	= 0x08
+                                 .equ	DDRC	= 0x07
+                                 .equ	PINC	= 0x06
+                                 .equ	PORTB	= 0x05
+                                 .equ	DDRB	= 0x04
+                                 .equ	PINB	= 0x03
+                                 
+                                 
+                                 ; ***** BIT DEFINITIONS **************************************************
+                                 
+                                 ; ***** USART0 ***********************
+                                 ; UDR0 - USART I/O Data Register
+                                 .equ	UDR0_0	= 0	; USART I/O Data Register bit 0
+                                 .equ	UDR0_1	= 1	; USART I/O Data Register bit 1
+                                 .equ	UDR0_2	= 2	; USART I/O Data Register bit 2
+                                 .equ	UDR0_3	= 3	; USART I/O Data Register bit 3
+                                 .equ	UDR0_4	= 4	; USART I/O Data Register bit 4
+                                 .equ	UDR0_5	= 5	; USART I/O Data Register bit 5
+                                 .equ	UDR0_6	= 6	; USART I/O Data Register bit 6
+                                 .equ	UDR0_7	= 7	; USART I/O Data Register bit 7
+                                 
+                                 ; UCSR0A - USART Control and Status Register A
+                                 .equ	MPCM0	= 0	; Multi-processor Communication Mode
+                                 .equ	U2X0	= 1	; Double the USART transmission speed
+                                 .equ	UPE0	= 2	; Parity Error
+                                 .equ	DOR0	= 3	; Data overRun
+                                 .equ	FE0	= 4	; Framing Error
+                                 .equ	UDRE0	= 5	; USART Data Register Empty
+                                 .equ	TXC0	= 6	; USART Transmitt Complete
+                                 .equ	RXC0	= 7	; USART Receive Complete
+                                 
+                                 ; UCSR0B - USART Control and Status Register B
+                                 .equ	TXB80	= 0	; Transmit Data Bit 8
+                                 .equ	RXB80	= 1	; Receive Data Bit 8
+                                 .equ	UCSZ02	= 2	; Character Size
+                                 .equ	TXEN0	= 3	; Transmitter Enable
+                                 .equ	RXEN0	= 4	; Receiver Enable
+                                 .equ	UDRIE0	= 5	; USART Data register Empty Interrupt Enable
+                                 .equ	TXCIE0	= 6	; TX Complete Interrupt Enable
+                                 .equ	RXCIE0	= 7	; RX Complete Interrupt Enable
+                                 
+                                 ; UCSR0C - USART Control and Status Register C
+                                 .equ	UCPOL0	= 0	; Clock Polarity
+                                 .equ	UCSZ00	= 1	; Character Size
+                                 .equ	UCPHA0	= UCSZ00	; For compatibility
+                                 .equ	UCSZ01	= 2	; Character Size
+                                 .equ	UDORD0	= UCSZ01	; For compatibility
+                                 .equ	USBS0	= 3	; Stop Bit Select
+                                 .equ	UPM00	= 4	; Parity Mode Bit 0
+                                 .equ	UPM01	= 5	; Parity Mode Bit 1
+                                 .equ	UMSEL00	= 6	; USART Mode Select
+                                 .equ	UMSEL0	= UMSEL00	; For compatibility
+                                 .equ	UMSEL01	= 7	; USART Mode Select
+                                 .equ	UMSEL1	= UMSEL01	; For compatibility
+                                 
+                                 ; UBRR0H - USART Baud Rate Register High Byte
+                                 .equ	UBRR8	= 0	; USART Baud Rate Register bit 8
+                                 .equ	UBRR9	= 1	; USART Baud Rate Register bit 9
+                                 .equ	UBRR10	= 2	; USART Baud Rate Register bit 10
+                                 .equ	UBRR11	= 3	; USART Baud Rate Register bit 11
+                                 
+                                 ; UBRR0L - USART Baud Rate Register Low Byte
+                                 .equ	_UBRR0	= 0	; USART Baud Rate Register bit 0
+                                 .equ	_UBRR1	= 1	; USART Baud Rate Register bit 1
+                                 .equ	UBRR2	= 2	; USART Baud Rate Register bit 2
+                                 .equ	UBRR3	= 3	; USART Baud Rate Register bit 3
+                                 .equ	UBRR4	= 4	; USART Baud Rate Register bit 4
+                                 .equ	UBRR5	= 5	; USART Baud Rate Register bit 5
+                                 .equ	UBRR6	= 6	; USART Baud Rate Register bit 6
+                                 .equ	UBRR7	= 7	; USART Baud Rate Register bit 7
+                                 
+                                 
+                                 ; ***** TWI **************************
+                                 ; TWAMR - TWI (Slave) Address Mask Register
+                                 .equ	TWAM0	= 1	; 
+                                 .equ	TWAMR0	= TWAM0	; For compatibility
+                                 .equ	TWAM1	= 2	; 
+                                 .equ	TWAMR1	= TWAM1	; For compatibility
+                                 .equ	TWAM2	= 3	; 
+                                 .equ	TWAMR2	= TWAM2	; For compatibility
+                                 .equ	TWAM3	= 4	; 
+                                 .equ	TWAMR3	= TWAM3	; For compatibility
+                                 .equ	TWAM4	= 5	; 
+                                 .equ	TWAMR4	= TWAM4	; For compatibility
+                                 .equ	TWAM5	= 6	; 
+                                 .equ	TWAMR5	= TWAM5	; For compatibility
+                                 .equ	TWAM6	= 7	; 
+                                 .equ	TWAMR6	= TWAM6	; For compatibility
+                                 
+                                 ; TWBR - TWI Bit Rate register
+                                 .equ	TWBR0	= 0	; 
+                                 .equ	TWBR1	= 1	; 
+                                 .equ	TWBR2	= 2	; 
+                                 .equ	TWBR3	= 3	; 
+                                 .equ	TWBR4	= 4	; 
+                                 .equ	TWBR5	= 5	; 
+                                 .equ	TWBR6	= 6	; 
+                                 .equ	TWBR7	= 7	; 
+                                 
+                                 ; TWCR - TWI Control Register
+                                 .equ	TWIE	= 0	; TWI Interrupt Enable
+                                 .equ	TWEN	= 2	; TWI Enable Bit
+                                 .equ	TWWC	= 3	; TWI Write Collition Flag
+                                 .equ	TWSTO	= 4	; TWI Stop Condition Bit
+                                 .equ	TWSTA	= 5	; TWI Start Condition Bit
+                                 .equ	TWEA	= 6	; TWI Enable Acknowledge Bit
+                                 .equ	TWINT	= 7	; TWI Interrupt Flag
+                                 
+                                 ; TWSR - TWI Status Register
+                                 .equ	TWPS0	= 0	; TWI Prescaler
+                                 .equ	TWPS1	= 1	; TWI Prescaler
+                                 .equ	TWS3	= 3	; TWI Status
+                                 .equ	TWS4	= 4	; TWI Status
+                                 .equ	TWS5	= 5	; TWI Status
+                                 .equ	TWS6	= 6	; TWI Status
+                                 .equ	TWS7	= 7	; TWI Status
+                                 
+                                 ; TWDR - TWI Data register
+                                 .equ	TWD0	= 0	; TWI Data Register Bit 0
+                                 .equ	TWD1	= 1	; TWI Data Register Bit 1
+                                 .equ	TWD2	= 2	; TWI Data Register Bit 2
+                                 .equ	TWD3	= 3	; TWI Data Register Bit 3
+                                 .equ	TWD4	= 4	; TWI Data Register Bit 4
+                                 .equ	TWD5	= 5	; TWI Data Register Bit 5
+                                 .equ	TWD6	= 6	; TWI Data Register Bit 6
+                                 .equ	TWD7	= 7	; TWI Data Register Bit 7
+                                 
+                                 ; TWAR - TWI (Slave) Address register
+                                 .equ	TWGCE	= 0	; TWI General Call Recognition Enable Bit
+                                 .equ	TWA0	= 1	; TWI (Slave) Address register Bit 0
+                                 .equ	TWA1	= 2	; TWI (Slave) Address register Bit 1
+                                 .equ	TWA2	= 3	; TWI (Slave) Address register Bit 2
+                                 .equ	TWA3	= 4	; TWI (Slave) Address register Bit 3
+                                 .equ	TWA4	= 5	; TWI (Slave) Address register Bit 4
+                                 .equ	TWA5	= 6	; TWI (Slave) Address register Bit 5
+                                 .equ	TWA6	= 7	; TWI (Slave) Address register Bit 6
+                                 
+                                 
+                                 ; ***** TIMER_COUNTER_1 **************
+                                 ; TIMSK1 - Timer/Counter Interrupt Mask Register
+                                 .equ	TOIE1	= 0	; Timer/Counter1 Overflow Interrupt Enable
+                                 .equ	OCIE1A	= 1	; Timer/Counter1 Output CompareA Match Interrupt Enable
+                                 .equ	OCIE1B	= 2	; Timer/Counter1 Output CompareB Match Interrupt Enable
+                                 .equ	ICIE1	= 5	; Timer/Counter1 Input Capture Interrupt Enable
+                                 
+                                 ; TIFR1 - Timer/Counter Interrupt Flag register
+                                 .equ	TOV1	= 0	; Timer/Counter1 Overflow Flag
+                                 .equ	OCF1A	= 1	; Output Compare Flag 1A
+                                 .equ	OCF1B	= 2	; Output Compare Flag 1B
+                                 .equ	ICF1	= 5	; Input Capture Flag 1
+                                 
+                                 ; TCCR1A - Timer/Counter1 Control Register A
+                                 .equ	WGM10	= 0	; Waveform Generation Mode
+                                 .equ	WGM11	= 1	; Waveform Generation Mode
+                                 .equ	COM1B0	= 4	; Compare Output Mode 1B, bit 0
+                                 .equ	COM1B1	= 5	; Compare Output Mode 1B, bit 1
+                                 .equ	COM1A0	= 6	; Comparet Ouput Mode 1A, bit 0
+                                 .equ	COM1A1	= 7	; Compare Output Mode 1A, bit 1
+                                 
+                                 ; TCCR1B - Timer/Counter1 Control Register B
+                                 .equ	CS10	= 0	; Prescaler source of Timer/Counter 1
+                                 .equ	CS11	= 1	; Prescaler source of Timer/Counter 1
+                                 .equ	CS12	= 2	; Prescaler source of Timer/Counter 1
+                                 .equ	WGM12	= 3	; Waveform Generation Mode
+                                 .equ	WGM13	= 4	; Waveform Generation Mode
+                                 .equ	ICES1	= 6	; Input Capture 1 Edge Select
+                                 .equ	ICNC1	= 7	; Input Capture 1 Noise Canceler
+                                 
+                                 ; TCCR1C - Timer/Counter1 Control Register C
+                                 .equ	FOC1B	= 6	; 
+                                 .equ	FOC1A	= 7	; 
+                                 
+                                 ; GTCCR - General Timer/Counter Control Register
+                                 .equ	PSRSYNC	= 0	; Prescaler Reset Timer/Counter1 and Timer/Counter0
+                                 .equ	TSM	= 7	; Timer/Counter Synchronization Mode
+                                 
+                                 
+                                 ; ***** TIMER_COUNTER_2 **************
+                                 ; TIMSK2 - Timer/Counter Interrupt Mask register
+                                 .equ	TOIE2	= 0	; Timer/Counter2 Overflow Interrupt Enable
+                                 .equ	TOIE2A	= TOIE2	; For compatibility
+                                 .equ	OCIE2A	= 1	; Timer/Counter2 Output Compare Match A Interrupt Enable
+                                 .equ	OCIE2B	= 2	; Timer/Counter2 Output Compare Match B Interrupt Enable
+                                 
+                                 ; TIFR2 - Timer/Counter Interrupt Flag Register
+                                 .equ	TOV2	= 0	; Timer/Counter2 Overflow Flag
+                                 .equ	OCF2A	= 1	; Output Compare Flag 2A
+                                 .equ	OCF2B	= 2	; Output Compare Flag 2B
+                                 
+                                 ; TCCR2A - Timer/Counter2 Control Register A
+                                 .equ	WGM20	= 0	; Waveform Genration Mode
+                                 .equ	WGM21	= 1	; Waveform Genration Mode
+                                 .equ	COM2B0	= 4	; Compare Output Mode bit 0
+                                 .equ	COM2B1	= 5	; Compare Output Mode bit 1
+                                 .equ	COM2A0	= 6	; Compare Output Mode bit 1
+                                 .equ	COM2A1	= 7	; Compare Output Mode bit 1
+                                 
+                                 ; TCCR2B - Timer/Counter2 Control Register B
+                                 .equ	CS20	= 0	; Clock Select bit 0
+                                 .equ	CS21	= 1	; Clock Select bit 1
+                                 .equ	CS22	= 2	; Clock Select bit 2
+                                 .equ	WGM22	= 3	; Waveform Generation Mode
+                                 .equ	FOC2B	= 6	; Force Output Compare B
+                                 .equ	FOC2A	= 7	; Force Output Compare A
+                                 
+                                 ; TCNT2 - Timer/Counter2
+                                 .equ	TCNT2_0	= 0	; Timer/Counter 2 bit 0
+                                 .equ	TCNT2_1	= 1	; Timer/Counter 2 bit 1
+                                 .equ	TCNT2_2	= 2	; Timer/Counter 2 bit 2
+                                 .equ	TCNT2_3	= 3	; Timer/Counter 2 bit 3
+                                 .equ	TCNT2_4	= 4	; Timer/Counter 2 bit 4
+                                 .equ	TCNT2_5	= 5	; Timer/Counter 2 bit 5
+                                 .equ	TCNT2_6	= 6	; Timer/Counter 2 bit 6
+                                 .equ	TCNT2_7	= 7	; Timer/Counter 2 bit 7
+                                 
+                                 ; OCR2A - Timer/Counter2 Output Compare Register A
+                                 .equ	OCR2A_0	= 0	; Timer/Counter2 Output Compare Register Bit 0
+                                 .equ	OCR2A_1	= 1	; Timer/Counter2 Output Compare Register Bit 1
+                                 .equ	OCR2A_2	= 2	; Timer/Counter2 Output Compare Register Bit 2
+                                 .equ	OCR2A_3	= 3	; Timer/Counter2 Output Compare Register Bit 3
+                                 .equ	OCR2A_4	= 4	; Timer/Counter2 Output Compare Register Bit 4
+                                 .equ	OCR2A_5	= 5	; Timer/Counter2 Output Compare Register Bit 5
+                                 .equ	OCR2A_6	= 6	; Timer/Counter2 Output Compare Register Bit 6
+                                 .equ	OCR2A_7	= 7	; Timer/Counter2 Output Compare Register Bit 7
+                                 
+                                 ; OCR2B - Timer/Counter2 Output Compare Register B
+                                 .equ	OCR2B_0	= 0	; Timer/Counter2 Output Compare Register Bit 0
+                                 .equ	OCR2B_1	= 1	; Timer/Counter2 Output Compare Register Bit 1
+                                 .equ	OCR2B_2	= 2	; Timer/Counter2 Output Compare Register Bit 2
+                                 .equ	OCR2B_3	= 3	; Timer/Counter2 Output Compare Register Bit 3
+                                 .equ	OCR2B_4	= 4	; Timer/Counter2 Output Compare Register Bit 4
+                                 .equ	OCR2B_5	= 5	; Timer/Counter2 Output Compare Register Bit 5
+                                 .equ	OCR2B_6	= 6	; Timer/Counter2 Output Compare Register Bit 6
+                                 .equ	OCR2B_7	= 7	; Timer/Counter2 Output Compare Register Bit 7
+                                 
+                                 ; ASSR - Asynchronous Status Register
+                                 .equ	TCR2BUB	= 0	; Timer/Counter Control Register2 Update Busy
+                                 .equ	TCR2AUB	= 1	; Timer/Counter Control Register2 Update Busy
+                                 .equ	OCR2BUB	= 2	; Output Compare Register 2 Update Busy
+                                 .equ	OCR2AUB	= 3	; Output Compare Register2 Update Busy
+                                 .equ	TCN2UB	= 4	; Timer/Counter2 Update Busy
+                                 .equ	AS2	= 5	; Asynchronous Timer/Counter2
+                                 .equ	EXCLK	= 6	; Enable External Clock Input
+                                 
+                                 ; GTCCR - General Timer Counter Control register
+                                 .equ	PSRASY	= 1	; Prescaler Reset Timer/Counter2
+                                 .equ	PSR2	= PSRASY	; For compatibility
+                                 ;.equ	TSM	= 7	; Timer/Counter Synchronization Mode
+                                 
+                                 
+                                 ; ***** AD_CONVERTER *****************
+                                 ; ADMUX - The ADC multiplexer Selection Register
+                                 .equ	MUX0	= 0	; Analog Channel and Gain Selection Bits
+                                 .equ	MUX1	= 1	; Analog Channel and Gain Selection Bits
+                                 .equ	MUX2	= 2	; Analog Channel and Gain Selection Bits
+                                 .equ	MUX3	= 3	; Analog Channel and Gain Selection Bits
+                                 .equ	ADLAR	= 5	; Left Adjust Result
+                                 .equ	REFS0	= 6	; Reference Selection Bit 0
+                                 .equ	REFS1	= 7	; Reference Selection Bit 1
+                                 
+                                 ; ADCSRA - The ADC Control and Status register A
+                                 .equ	ADPS0	= 0	; ADC  Prescaler Select Bits
+                                 .equ	ADPS1	= 1	; ADC  Prescaler Select Bits
+                                 .equ	ADPS2	= 2	; ADC  Prescaler Select Bits
+                                 .equ	ADIE	= 3	; ADC Interrupt Enable
+                                 .equ	ADIF	= 4	; ADC Interrupt Flag
+                                 .equ	ADATE	= 5	; ADC  Auto Trigger Enable
+                                 .equ	ADSC	= 6	; ADC Start Conversion
+                                 .equ	ADEN	= 7	; ADC Enable
+                                 
+                                 ; ADCSRB - The ADC Control and Status register B
+                                 .equ	ADTS0	= 0	; ADC Auto Trigger Source bit 0
+                                 .equ	ADTS1	= 1	; ADC Auto Trigger Source bit 1
+                                 .equ	ADTS2	= 2	; ADC Auto Trigger Source bit 2
+                                 .equ	ACME	= 6	; 
+                                 
+                                 ; ADCH - ADC Data Register High Byte
+                                 .equ	ADCH0	= 0	; ADC Data Register High Byte Bit 0
+                                 .equ	ADCH1	= 1	; ADC Data Register High Byte Bit 1
+                                 .equ	ADCH2	= 2	; ADC Data Register High Byte Bit 2
+                                 .equ	ADCH3	= 3	; ADC Data Register High Byte Bit 3
+                                 .equ	ADCH4	= 4	; ADC Data Register High Byte Bit 4
+                                 .equ	ADCH5	= 5	; ADC Data Register High Byte Bit 5
+                                 .equ	ADCH6	= 6	; ADC Data Register High Byte Bit 6
+                                 .equ	ADCH7	= 7	; ADC Data Register High Byte Bit 7
+                                 
+                                 ; ADCL - ADC Data Register Low Byte
+                                 .equ	ADCL0	= 0	; ADC Data Register Low Byte Bit 0
+                                 .equ	ADCL1	= 1	; ADC Data Register Low Byte Bit 1
+                                 .equ	ADCL2	= 2	; ADC Data Register Low Byte Bit 2
+                                 .equ	ADCL3	= 3	; ADC Data Register Low Byte Bit 3
+                                 .equ	ADCL4	= 4	; ADC Data Register Low Byte Bit 4
+                                 .equ	ADCL5	= 5	; ADC Data Register Low Byte Bit 5
+                                 .equ	ADCL6	= 6	; ADC Data Register Low Byte Bit 6
+                                 .equ	ADCL7	= 7	; ADC Data Register Low Byte Bit 7
+                                 
+                                 ; DIDR0 - Digital Input Disable Register
+                                 .equ	ADC0D	= 0	; 
+                                 .equ	ADC1D	= 1	; 
+                                 .equ	ADC2D	= 2	; 
+                                 .equ	ADC3D	= 3	; 
+                                 .equ	ADC4D	= 4	; 
+                                 .equ	ADC5D	= 5	; 
+                                 
+                                 
+                                 ; ***** ANALOG_COMPARATOR ************
+                                 ; ACSR - Analog Comparator Control And Status Register
+                                 .equ	ACIS0	= 0	; Analog Comparator Interrupt Mode Select bit 0
+                                 .equ	ACIS1	= 1	; Analog Comparator Interrupt Mode Select bit 1
+                                 .equ	ACIC	= 2	; Analog Comparator Input Capture Enable
+                                 .equ	ACIE	= 3	; Analog Comparator Interrupt Enable
+                                 .equ	ACI	= 4	; Analog Comparator Interrupt Flag
+                                 .equ	ACO	= 5	; Analog Compare Output
+                                 .equ	ACBG	= 6	; Analog Comparator Bandgap Select
+                                 .equ	ACD	= 7	; Analog Comparator Disable
+                                 
+                                 ; DIDR1 - Digital Input Disable Register 1
+                                 .equ	AIN0D	= 0	; AIN0 Digital Input Disable
+                                 .equ	AIN1D	= 1	; AIN1 Digital Input Disable
+                                 
+                                 
+                                 ; ***** PORTB ************************
+                                 ; PORTB - Port B Data Register
+                                 .equ	PORTB0	= 0	; Port B Data Register bit 0
+                                 .equ	PB0	= 0	; For compatibility
+                                 .equ	PORTB1	= 1	; Port B Data Register bit 1
+                                 .equ	PB1	= 1	; For compatibility
+                                 .equ	PORTB2	= 2	; Port B Data Register bit 2
+                                 .equ	PB2	= 2	; For compatibility
+                                 .equ	PORTB3	= 3	; Port B Data Register bit 3
+                                 .equ	PB3	= 3	; For compatibility
+                                 .equ	PORTB4	= 4	; Port B Data Register bit 4
+                                 .equ	PB4	= 4	; For compatibility
+                                 .equ	PORTB5	= 5	; Port B Data Register bit 5
+                                 .equ	PB5	= 5	; For compatibility
+                                 .equ	PORTB6	= 6	; Port B Data Register bit 6
+                                 .equ	PB6	= 6	; For compatibility
+                                 .equ	PORTB7	= 7	; Port B Data Register bit 7
+                                 .equ	PB7	= 7	; For compatibility
+                                 
+                                 ; DDRB - Port B Data Direction Register
+                                 .equ	DDB0	= 0	; Port B Data Direction Register bit 0
+                                 .equ	DDB1	= 1	; Port B Data Direction Register bit 1
+                                 .equ	DDB2	= 2	; Port B Data Direction Register bit 2
+                                 .equ	DDB3	= 3	; Port B Data Direction Register bit 3
+                                 .equ	DDB4	= 4	; Port B Data Direction Register bit 4
+                                 .equ	DDB5	= 5	; Port B Data Direction Register bit 5
+                                 .equ	DDB6	= 6	; Port B Data Direction Register bit 6
+                                 .equ	DDB7	= 7	; Port B Data Direction Register bit 7
+                                 
+                                 ; PINB - Port B Input Pins
+                                 .equ	PINB0	= 0	; Port B Input Pins bit 0
+                                 .equ	PINB1	= 1	; Port B Input Pins bit 1
+                                 .equ	PINB2	= 2	; Port B Input Pins bit 2
+                                 .equ	PINB3	= 3	; Port B Input Pins bit 3
+                                 .equ	PINB4	= 4	; Port B Input Pins bit 4
+                                 .equ	PINB5	= 5	; Port B Input Pins bit 5
+                                 .equ	PINB6	= 6	; Port B Input Pins bit 6
+                                 .equ	PINB7	= 7	; Port B Input Pins bit 7
+                                 
+                                 
+                                 ; ***** PORTC ************************
+                                 ; PORTC - Port C Data Register
+                                 .equ	PORTC0	= 0	; Port C Data Register bit 0
+                                 .equ	PC0	= 0	; For compatibility
+                                 .equ	PORTC1	= 1	; Port C Data Register bit 1
+                                 .equ	PC1	= 1	; For compatibility
+                                 .equ	PORTC2	= 2	; Port C Data Register bit 2
+                                 .equ	PC2	= 2	; For compatibility
+                                 .equ	PORTC3	= 3	; Port C Data Register bit 3
+                                 .equ	PC3	= 3	; For compatibility
+                                 .equ	PORTC4	= 4	; Port C Data Register bit 4
+                                 .equ	PC4	= 4	; For compatibility
+                                 .equ	PORTC5	= 5	; Port C Data Register bit 5
+                                 .equ	PC5	= 5	; For compatibility
+                                 .equ	PORTC6	= 6	; Port C Data Register bit 6
+                                 .equ	PC6	= 6	; For compatibility
+                                 
+                                 ; DDRC - Port C Data Direction Register
+                                 .equ	DDC0	= 0	; Port C Data Direction Register bit 0
+                                 .equ	DDC1	= 1	; Port C Data Direction Register bit 1
+                                 .equ	DDC2	= 2	; Port C Data Direction Register bit 2
+                                 .equ	DDC3	= 3	; Port C Data Direction Register bit 3
+                                 .equ	DDC4	= 4	; Port C Data Direction Register bit 4
+                                 .equ	DDC5	= 5	; Port C Data Direction Register bit 5
+                                 .equ	DDC6	= 6	; Port C Data Direction Register bit 6
+                                 
+                                 ; PINC - Port C Input Pins
+                                 .equ	PINC0	= 0	; Port C Input Pins bit 0
+                                 .equ	PINC1	= 1	; Port C Input Pins bit 1
+                                 .equ	PINC2	= 2	; Port C Input Pins bit 2
+                                 .equ	PINC3	= 3	; Port C Input Pins bit 3
+                                 .equ	PINC4	= 4	; Port C Input Pins bit 4
+                                 .equ	PINC5	= 5	; Port C Input Pins bit 5
+                                 .equ	PINC6	= 6	; Port C Input Pins bit 6
+                                 
+                                 
+                                 ; ***** PORTD ************************
+                                 ; PORTD - Port D Data Register
+                                 .equ	PORTD0	= 0	; Port D Data Register bit 0
+                                 .equ	PD0	= 0	; For compatibility
+                                 .equ	PORTD1	= 1	; Port D Data Register bit 1
+                                 .equ	PD1	= 1	; For compatibility
+                                 .equ	PORTD2	= 2	; Port D Data Register bit 2
+                                 .equ	PD2	= 2	; For compatibility
+                                 .equ	PORTD3	= 3	; Port D Data Register bit 3
+                                 .equ	PD3	= 3	; For compatibility
+                                 .equ	PORTD4	= 4	; Port D Data Register bit 4
+                                 .equ	PD4	= 4	; For compatibility
+                                 .equ	PORTD5	= 5	; Port D Data Register bit 5
+                                 .equ	PD5	= 5	; For compatibility
+                                 .equ	PORTD6	= 6	; Port D Data Register bit 6
+                                 .equ	PD6	= 6	; For compatibility
+                                 .equ	PORTD7	= 7	; Port D Data Register bit 7
+                                 .equ	PD7	= 7	; For compatibility
+                                 
+                                 ; DDRD - Port D Data Direction Register
+                                 .equ	DDD0	= 0	; Port D Data Direction Register bit 0
+                                 .equ	DDD1	= 1	; Port D Data Direction Register bit 1
+                                 .equ	DDD2	= 2	; Port D Data Direction Register bit 2
+                                 .equ	DDD3	= 3	; Port D Data Direction Register bit 3
+                                 .equ	DDD4	= 4	; Port D Data Direction Register bit 4
+                                 .equ	DDD5	= 5	; Port D Data Direction Register bit 5
+                                 .equ	DDD6	= 6	; Port D Data Direction Register bit 6
+                                 .equ	DDD7	= 7	; Port D Data Direction Register bit 7
+                                 
+                                 ; PIND - Port D Input Pins
+                                 .equ	PIND0	= 0	; Port D Input Pins bit 0
+                                 .equ	PIND1	= 1	; Port D Input Pins bit 1
+                                 .equ	PIND2	= 2	; Port D Input Pins bit 2
+                                 .equ	PIND3	= 3	; Port D Input Pins bit 3
+                                 .equ	PIND4	= 4	; Port D Input Pins bit 4
+                                 .equ	PIND5	= 5	; Port D Input Pins bit 5
+                                 .equ	PIND6	= 6	; Port D Input Pins bit 6
+                                 .equ	PIND7	= 7	; Port D Input Pins bit 7
+                                 
+                                 
+                                 ; ***** TIMER_COUNTER_0 **************
+                                 ; TIMSK0 - Timer/Counter0 Interrupt Mask Register
+                                 .equ	TOIE0	= 0	; Timer/Counter0 Overflow Interrupt Enable
+                                 .equ	OCIE0A	= 1	; Timer/Counter0 Output Compare Match A Interrupt Enable
+                                 .equ	OCIE0B	= 2	; Timer/Counter0 Output Compare Match B Interrupt Enable
+                                 
+                                 ; TIFR0 - Timer/Counter0 Interrupt Flag register
+                                 .equ	TOV0	= 0	; Timer/Counter0 Overflow Flag
+                                 .equ	OCF0A	= 1	; Timer/Counter0 Output Compare Flag 0A
+                                 .equ	OCF0B	= 2	; Timer/Counter0 Output Compare Flag 0B
+                                 
+                                 ; TCCR0A - Timer/Counter  Control Register A
+                                 .equ	WGM00	= 0	; Waveform Generation Mode
+                                 .equ	WGM01	= 1	; Waveform Generation Mode
+                                 .equ	COM0B0	= 4	; Compare Output Mode, Fast PWm
+                                 .equ	COM0B1	= 5	; Compare Output Mode, Fast PWm
+                                 .equ	COM0A0	= 6	; Compare Output Mode, Phase Correct PWM Mode
+                                 .equ	COM0A1	= 7	; Compare Output Mode, Phase Correct PWM Mode
+                                 
+                                 ; TCCR0B - Timer/Counter Control Register B
+                                 .equ	CS00	= 0	; Clock Select
+                                 .equ	CS01	= 1	; Clock Select
+                                 .equ	CS02	= 2	; Clock Select
+                                 .equ	WGM02	= 3	; 
+                                 .equ	FOC0B	= 6	; Force Output Compare B
+                                 .equ	FOC0A	= 7	; Force Output Compare A
+                                 
+                                 ; TCNT0 - Timer/Counter0
+                                 .equ	TCNT0_0	= 0	; 
+                                 .equ	TCNT0_1	= 1	; 
+                                 .equ	TCNT0_2	= 2	; 
+                                 .equ	TCNT0_3	= 3	; 
+                                 .equ	TCNT0_4	= 4	; 
+                                 .equ	TCNT0_5	= 5	; 
+                                 .equ	TCNT0_6	= 6	; 
+                                 .equ	TCNT0_7	= 7	; 
+                                 
+                                 ; OCR0A - Timer/Counter0 Output Compare Register
+                                 .equ	OCR0A_0	= 0	; 
+                                 .equ	OCR0A_1	= 1	; 
+                                 .equ	OCR0A_2	= 2	; 
+                                 .equ	OCR0A_3	= 3	; 
+                                 .equ	OCR0A_4	= 4	; 
+                                 .equ	OCR0A_5	= 5	; 
+                                 .equ	OCR0A_6	= 6	; 
+                                 .equ	OCR0A_7	= 7	; 
+                                 
+                                 ; OCR0B - Timer/Counter0 Output Compare Register
+                                 .equ	OCR0B_0	= 0	; 
+                                 .equ	OCR0B_1	= 1	; 
+                                 .equ	OCR0B_2	= 2	; 
+                                 .equ	OCR0B_3	= 3	; 
+                                 .equ	OCR0B_4	= 4	; 
+                                 .equ	OCR0B_5	= 5	; 
+                                 .equ	OCR0B_6	= 6	; 
+                                 .equ	OCR0B_7	= 7	; 
+                                 
+                                 ; GTCCR - General Timer/Counter Control Register
+                                 ;.equ	PSRSYNC	= 0	; Prescaler Reset Timer/Counter1 and Timer/Counter0
+                                 .equ	PSR10	= PSRSYNC	; For compatibility
+                                 ;.equ	TSM	= 7	; Timer/Counter Synchronization Mode
+                                 
+                                 
+                                 ; ***** EXTERNAL_INTERRUPT ***********
+                                 ; EICRA - External Interrupt Control Register
+                                 .equ	ISC00	= 0	; External Interrupt Sense Control 0 Bit 0
+                                 .equ	ISC01	= 1	; External Interrupt Sense Control 0 Bit 1
+                                 .equ	ISC10	= 2	; External Interrupt Sense Control 1 Bit 0
+                                 .equ	ISC11	= 3	; External Interrupt Sense Control 1 Bit 1
+                                 
+                                 ; EIMSK - External Interrupt Mask Register
+                                 .equ	INT0	= 0	; External Interrupt Request 0 Enable
+                                 .equ	INT1	= 1	; External Interrupt Request 1 Enable
+                                 
+                                 ; EIFR - External Interrupt Flag Register
+                                 .equ	INTF0	= 0	; External Interrupt Flag 0
+                                 .equ	INTF1	= 1	; External Interrupt Flag 1
+                                 
+                                 ; PCICR - Pin Change Interrupt Control Register
+                                 .equ	PCIE0	= 0	; Pin Change Interrupt Enable 0
+                                 .equ	PCIE1	= 1	; Pin Change Interrupt Enable 1
+                                 .equ	PCIE2	= 2	; Pin Change Interrupt Enable 2
+                                 
+                                 ; PCMSK2 - Pin Change Mask Register 2
+                                 .equ	PCINT16	= 0	; Pin Change Enable Mask 16
+                                 .equ	PCINT17	= 1	; Pin Change Enable Mask 17
+                                 .equ	PCINT18	= 2	; Pin Change Enable Mask 18
+                                 .equ	PCINT19	= 3	; Pin Change Enable Mask 19
+                                 .equ	PCINT20	= 4	; Pin Change Enable Mask 20
+                                 .equ	PCINT21	= 5	; Pin Change Enable Mask 21
+                                 .equ	PCINT22	= 6	; Pin Change Enable Mask 22
+                                 .equ	PCINT23	= 7	; Pin Change Enable Mask 23
+                                 
+                                 ; PCMSK1 - Pin Change Mask Register 1
+                                 .equ	PCINT8	= 0	; Pin Change Enable Mask 8
+                                 .equ	PCINT9	= 1	; Pin Change Enable Mask 9
+                                 .equ	PCINT10	= 2	; Pin Change Enable Mask 10
+                                 .equ	PCINT11	= 3	; Pin Change Enable Mask 11
+                                 .equ	PCINT12	= 4	; Pin Change Enable Mask 12
+                                 .equ	PCINT13	= 5	; Pin Change Enable Mask 13
+                                 .equ	PCINT14	= 6	; Pin Change Enable Mask 14
+                                 
+                                 ; PCMSK0 - Pin Change Mask Register 0
+                                 .equ	PCINT0	= 0	; Pin Change Enable Mask 0
+                                 .equ	PCINT1	= 1	; Pin Change Enable Mask 1
+                                 .equ	PCINT2	= 2	; Pin Change Enable Mask 2
+                                 .equ	PCINT3	= 3	; Pin Change Enable Mask 3
+                                 .equ	PCINT4	= 4	; Pin Change Enable Mask 4
+                                 .equ	PCINT5	= 5	; Pin Change Enable Mask 5
+                                 .equ	PCINT6	= 6	; Pin Change Enable Mask 6
+                                 .equ	PCINT7	= 7	; Pin Change Enable Mask 7
+                                 
+                                 ; PCIFR - Pin Change Interrupt Flag Register
+                                 .equ	PCIF0	= 0	; Pin Change Interrupt Flag 0
+                                 .equ	PCIF1	= 1	; Pin Change Interrupt Flag 1
+                                 .equ	PCIF2	= 2	; Pin Change Interrupt Flag 2
+                                 
+                                 
+                                 ; ***** SPI **************************
+                                 ; SPDR - SPI Data Register
+                                 .equ	SPDR0	= 0	; SPI Data Register bit 0
+                                 .equ	SPDR1	= 1	; SPI Data Register bit 1
+                                 .equ	SPDR2	= 2	; SPI Data Register bit 2
+                                 .equ	SPDR3	= 3	; SPI Data Register bit 3
+                                 .equ	SPDR4	= 4	; SPI Data Register bit 4
+                                 .equ	SPDR5	= 5	; SPI Data Register bit 5
+                                 .equ	SPDR6	= 6	; SPI Data Register bit 6
+                                 .equ	SPDR7	= 7	; SPI Data Register bit 7
+                                 
+                                 ; SPSR - SPI Status Register
+                                 .equ	SPI2X	= 0	; Double SPI Speed Bit
+                                 .equ	WCOL	= 6	; Write Collision Flag
+                                 .equ	SPIF	= 7	; SPI Interrupt Flag
+                                 
+                                 ; SPCR - SPI Control Register
+                                 .equ	SPR0	= 0	; SPI Clock Rate Select 0
+                                 .equ	SPR1	= 1	; SPI Clock Rate Select 1
+                                 .equ	CPHA	= 2	; Clock Phase
+                                 .equ	CPOL	= 3	; Clock polarity
+                                 .equ	MSTR	= 4	; Master/Slave Select
+                                 .equ	DORD	= 5	; Data Order
+                                 .equ	SPE	= 6	; SPI Enable
+                                 .equ	SPIE	= 7	; SPI Interrupt Enable
+                                 
+                                 
+                                 ; ***** WATCHDOG *********************
+                                 ; WDTCSR - Watchdog Timer Control Register
+                                 .equ	WDP0	= 0	; Watch Dog Timer Prescaler bit 0
+                                 .equ	WDP1	= 1	; Watch Dog Timer Prescaler bit 1
+                                 .equ	WDP2	= 2	; Watch Dog Timer Prescaler bit 2
+                                 .equ	WDE	= 3	; Watch Dog Enable
+                                 .equ	WDCE	= 4	; Watchdog Change Enable
+                                 .equ	WDP3	= 5	; Watchdog Timer Prescaler Bit 3
+                                 .equ	WDIE	= 6	; Watchdog Timeout Interrupt Enable
+                                 .equ	WDIF	= 7	; Watchdog Timeout Interrupt Flag
+                                 
+                                 
+                                 ; ***** CPU **************************
+                                 ; SREG - Status Register
+                                 .equ	SREG_C	= 0	; Carry Flag
+                                 .equ	SREG_Z	= 1	; Zero Flag
+                                 .equ	SREG_N	= 2	; Negative Flag
+                                 .equ	SREG_V	= 3	; Two's Complement Overflow Flag
+                                 .equ	SREG_S	= 4	; Sign Bit
+                                 .equ	SREG_H	= 5	; Half Carry Flag
+                                 .equ	SREG_T	= 6	; Bit Copy Storage
+                                 .equ	SREG_I	= 7	; Global Interrupt Enable
+                                 
+                                 ; OSCCAL - Oscillator Calibration Value
+                                 .equ	CAL0	= 0	; Oscillator Calibration Value Bit0
+                                 .equ	CAL1	= 1	; Oscillator Calibration Value Bit1
+                                 .equ	CAL2	= 2	; Oscillator Calibration Value Bit2
+                                 .equ	CAL3	= 3	; Oscillator Calibration Value Bit3
+                                 .equ	CAL4	= 4	; Oscillator Calibration Value Bit4
+                                 .equ	CAL5	= 5	; Oscillator Calibration Value Bit5
+                                 .equ	CAL6	= 6	; Oscillator Calibration Value Bit6
+                                 .equ	CAL7	= 7	; Oscillator Calibration Value Bit7
+                                 
+                                 ; CLKPR - Clock Prescale Register
+                                 .equ	CLKPS0	= 0	; Clock Prescaler Select Bit 0
+                                 .equ	CLKPS1	= 1	; Clock Prescaler Select Bit 1
+                                 .equ	CLKPS2	= 2	; Clock Prescaler Select Bit 2
+                                 .equ	CLKPS3	= 3	; Clock Prescaler Select Bit 3
+                                 .equ	CLKPCE	= 7	; Clock Prescaler Change Enable
+                                 
+                                 ; SPMCSR - Store Program Memory Control and Status Register
+                                 .equ    SELFPRGEN = 0; Added for backwards compatibility
+                                 .equ	SPMEN	= 0	; Store Program Memory
+                                 .equ	PGERS	= 1	; Page Erase
+                                 .equ	PGWRT	= 2	; Page Write
+                                 .equ	BLBSET	= 3	; Boot Lock Bit Set
+                                 .equ	RWWSRE	= 4	; Read-While-Write section read enable
+                                 .equ    SIGRD   = 5 ; Signature Row Read
+                                 .equ	RWWSB	= 6	; Read-While-Write Section Busy
+                                 .equ	SPMIE	= 7	; SPM Interrupt Enable
+                                 
+                                 ; MCUCR - MCU Control Register
+                                 .equ	IVCE	= 0	; 
+                                 .equ	IVSEL	= 1	; 
+                                 .equ	PUD	= 4	; 
+                                 .equ	BODSE	= 5	; BOD Sleep Enable
+                                 .equ	BODS	= 6	; BOD Sleep
+                                 
+                                 ; MCUSR - MCU Status Register
+                                 .equ	PORF	= 0	; Power-on reset flag
+                                 .equ	EXTRF	= 1	; External Reset Flag
+                                 .equ	EXTREF	= EXTRF	; For compatibility
+                                 .equ	BORF	= 2	; Brown-out Reset Flag
+                                 .equ	WDRF	= 3	; Watchdog Reset Flag
+                                 
+                                 ; SMCR - Sleep Mode Control Register
+                                 .equ	SE	= 0	; Sleep Enable
+                                 .equ	SM0	= 1	; Sleep Mode Select Bit 0
+                                 .equ	SM1	= 2	; Sleep Mode Select Bit 1
+                                 .equ	SM2	= 3	; Sleep Mode Select Bit 2
+                                 
+                                 ; GPIOR2 - General Purpose I/O Register 2
+                                 .equ	GPIOR20	= 0	; 
+                                 .equ	GPIOR21	= 1	; 
+                                 .equ	GPIOR22	= 2	; 
+                                 .equ	GPIOR23	= 3	; 
+                                 .equ	GPIOR24	= 4	; 
+                                 .equ	GPIOR25	= 5	; 
+                                 .equ	GPIOR26	= 6	; 
+                                 .equ	GPIOR27	= 7	; 
+                                 
+                                 ; GPIOR1 - General Purpose I/O Register 1
+                                 .equ	GPIOR10	= 0	; 
+                                 .equ	GPIOR11	= 1	; 
+                                 .equ	GPIOR12	= 2	; 
+                                 .equ	GPIOR13	= 3	; 
+                                 .equ	GPIOR14	= 4	; 
+                                 .equ	GPIOR15	= 5	; 
+                                 .equ	GPIOR16	= 6	; 
+                                 .equ	GPIOR17	= 7	; 
+                                 
+                                 ; GPIOR0 - General Purpose I/O Register 0
+                                 .equ	GPIOR00	= 0	; 
+                                 .equ	GPIOR01	= 1	; 
+                                 .equ	GPIOR02	= 2	; 
+                                 .equ	GPIOR03	= 3	; 
+                                 .equ	GPIOR04	= 4	; 
+                                 .equ	GPIOR05	= 5	; 
+                                 .equ	GPIOR06	= 6	; 
+                                 .equ	GPIOR07	= 7	; 
+                                 
+                                 ; PRR - Power Reduction Register
+                                 .equ	PRADC	= 0	; Power Reduction ADC
+                                 .equ	PRUSART0	= 1	; Power Reduction USART
+                                 .equ	PRSPI	= 2	; Power Reduction Serial Peripheral Interface
+                                 .equ	PRTIM1	= 3	; Power Reduction Timer/Counter1
+                                 .equ	PRTIM0	= 5	; Power Reduction Timer/Counter0
+                                 .equ	PRTIM2	= 6	; Power Reduction Timer/Counter2
+                                 .equ	PRTWI	= 7	; Power Reduction TWI
+                                 
+                                 
+                                 ; ***** EEPROM ***********************
+                                 ; EEARL - EEPROM Address Register Low Byte
+                                 .equ	EEAR0	= 0	; EEPROM Read/Write Access Bit 0
+                                 .equ	EEAR1	= 1	; EEPROM Read/Write Access Bit 1
+                                 .equ	EEAR2	= 2	; EEPROM Read/Write Access Bit 2
+                                 .equ	EEAR3	= 3	; EEPROM Read/Write Access Bit 3
+                                 .equ	EEAR4	= 4	; EEPROM Read/Write Access Bit 4
+                                 .equ	EEAR5	= 5	; EEPROM Read/Write Access Bit 5
+                                 .equ	EEAR6	= 6	; EEPROM Read/Write Access Bit 6
+                                 .equ	EEAR7	= 7	; EEPROM Read/Write Access Bit 7
+                                 
+                                 ; EEARH - EEPROM Address Register High Byte
+                                 .equ	EEAR8	= 0	; EEPROM Read/Write Access Bit 8
+                                 .equ	EEAR9	= 1	; EEPROM Read/Write Access Bit 9
+                                 
+                                 ; EEDR - EEPROM Data Register
+                                 .equ	EEDR0	= 0	; EEPROM Data Register bit 0
+                                 .equ	EEDR1	= 1	; EEPROM Data Register bit 1
+                                 .equ	EEDR2	= 2	; EEPROM Data Register bit 2
+                                 .equ	EEDR3	= 3	; EEPROM Data Register bit 3
+                                 .equ	EEDR4	= 4	; EEPROM Data Register bit 4
+                                 .equ	EEDR5	= 5	; EEPROM Data Register bit 5
+                                 .equ	EEDR6	= 6	; EEPROM Data Register bit 6
+                                 .equ	EEDR7	= 7	; EEPROM Data Register bit 7
+                                 
+                                 ; EECR - EEPROM Control Register
+                                 .equ	EERE	= 0	; EEPROM Read Enable
+                                 .equ	EEPE	= 1	; EEPROM Write Enable
+                                 .equ	EEMPE	= 2	; EEPROM Master Write Enable
+                                 .equ	EERIE	= 3	; EEPROM Ready Interrupt Enable
+                                 .equ	EEPM0	= 4	; EEPROM Programming Mode Bit 0
+                                 .equ	EEPM1	= 5	; EEPROM Programming Mode Bit 1
+                                 
+                                 
+                                 
+                                 ; ***** LOCKSBITS ********************************************************
+                                 .equ	LB1	= 0	; Lock bit
+                                 .equ	LB2	= 1	; Lock bit
+                                 .equ	BLB01	= 2	; Boot Lock bit
+                                 .equ	BLB02	= 3	; Boot Lock bit
+                                 .equ	BLB11	= 4	; Boot lock bit
+                                 .equ	BLB12	= 5	; Boot lock bit
+                                 
+                                 
+                                 ; ***** FUSES ************************************************************
+                                 ; LOW fuse bits
+                                 .equ	CKSEL0	= 0	; Select Clock Source
+                                 .equ	CKSEL1	= 1	; Select Clock Source
+                                 .equ	CKSEL2	= 2	; Select Clock Source
+                                 .equ	CKSEL3	= 3	; Select Clock Source
+                                 .equ	SUT0	= 4	; Select start-up time
+                                 .equ	SUT1	= 5	; Select start-up time
+                                 .equ	CKOUT	= 6	; Clock output
+                                 .equ	CKDIV8	= 7	; Divide clock by 8
+                                 
+                                 ; HIGH fuse bits
+                                 .equ	BOOTRST	= 0	; Select reset vector
+                                 .equ	BOOTSZ0	= 1	; Select boot size
+                                 .equ	BOOTSZ1	= 2	; Select boot size
+                                 .equ	EESAVE	= 3	; EEPROM memory is preserved through chip erase
+                                 .equ	WDTON	= 4	; Watchdog Timer Always On
+                                 .equ	SPIEN	= 5	; Enable Serial programming and Data Downloading
+                                 .equ	DWEN	= 6	; debugWIRE Enable
+                                 .equ	RSTDISBL	= 7	; External reset disable
+                                 
+                                 ; EXTENDED fuse bits
+                                 .equ	BODLEVEL0	= 0	; Brown-out Detector trigger level
+                                 .equ	BODLEVEL1	= 1	; Brown-out Detector trigger level
+                                 .equ	BODLEVEL2	= 2	; Brown-out Detector trigger level
+                                 
+                                 
+                                 
+                                 ; ***** CPU REGISTER DEFINITIONS *****************************************
+                                 .def	XH	= r27
+                                 .def	XL	= r26
+                                 .def	YH	= r29
+                                 .def	YL	= r28
+                                 .def	ZH	= r31
+                                 .def	ZL	= r30
+                                 
+                                 
+                                 
+                                 ; ***** DATA MEMORY DECLARATIONS *****************************************
+                                 .equ	FLASHEND	= 0x3fff	; Note: Word address
+                                 .equ	IOEND	= 0x00ff
+                                 .equ	SRAM_START	= 0x0100
+                                 .equ	SRAM_SIZE	= 2048
+                                 .equ	RAMEND	= 0x08ff
+                                 .equ	XRAMEND	= 0x0000
+                                 .equ	E2END	= 0x03ff
+                                 .equ	EEPROMEND	= 0x03ff
+                                 .equ	EEADRBITS	= 10
+                                 #pragma AVRPART MEMORY PROG_FLASH 32768
+                                 #pragma AVRPART MEMORY EEPROM 1024
+                                 #pragma AVRPART MEMORY INT_SRAM SIZE 2048
+                                 #pragma AVRPART MEMORY INT_SRAM START_ADDR 0x100
+                                 
+                                 
+                                 
+                                 ; ***** BOOTLOADER DECLARATIONS ******************************************
+                                 .equ	NRWW_START_ADDR	= 0x3800
+                                 .equ	NRWW_STOP_ADDR	= 0x3fff
+                                 .equ	RWW_START_ADDR	= 0x0
+                                 .equ	RWW_STOP_ADDR	= 0x37ff
+                                 .equ	PAGESIZE	= 64
+                                 .equ	FIRSTBOOTSTART	= 0x3f00
+                                 .equ	SECONDBOOTSTART	= 0x3e00
+                                 .equ	THIRDBOOTSTART	= 0x3c00
+                                 .equ	FOURTHBOOTSTART	= 0x3800
+                                 .equ	SMALLBOOTSTART	= FIRSTBOOTSTART
+                                 .equ	LARGEBOOTSTART	= FOURTHBOOTSTART
+                                 
+                                 
+                                 
+                                 ; ***** INTERRUPT VECTORS ************************************************
+                                 .equ	INT0addr	= 0x0002	; External Interrupt Request 0
+                                 .equ	INT1addr	= 0x0004	; External Interrupt Request 1
+                                 .equ	PCI0addr	= 0x0006	; Pin Change Interrupt Request 0
+                                 .equ	PCI1addr	= 0x0008	; Pin Change Interrupt Request 0
+                                 .equ	PCI2addr	= 0x000a	; Pin Change Interrupt Request 1
+                                 .equ	WDTaddr	= 0x000c	; Watchdog Time-out Interrupt
+                                 .equ	OC2Aaddr	= 0x000e	; Timer/Counter2 Compare Match A
+                                 .equ	OC2Baddr	= 0x0010	; Timer/Counter2 Compare Match A
+                                 .equ	OVF2addr	= 0x0012	; Timer/Counter2 Overflow
+                                 .equ	ICP1addr	= 0x0014	; Timer/Counter1 Capture Event
+                                 .equ	OC1Aaddr	= 0x0016	; Timer/Counter1 Compare Match A
+                                 .equ	OC1Baddr	= 0x0018	; Timer/Counter1 Compare Match B
+                                 .equ	OVF1addr	= 0x001a	; Timer/Counter1 Overflow
+                                 .equ	OC0Aaddr	= 0x001c	; TimerCounter0 Compare Match A
+                                 .equ	OC0Baddr	= 0x001e	; TimerCounter0 Compare Match B
+                                 .equ	OVF0addr	= 0x0020	; Timer/Couner0 Overflow
+                                 .equ	SPIaddr	= 0x0022	; SPI Serial Transfer Complete
+                                 .equ	URXCaddr	= 0x0024	; USART Rx Complete
+                                 .equ	UDREaddr	= 0x0026	; USART, Data Register Empty
+                                 .equ	UTXCaddr	= 0x0028	; USART Tx Complete
+                                 .equ	ADCCaddr	= 0x002a	; ADC Conversion Complete
+                                 .equ	ERDYaddr	= 0x002c	; EEPROM Ready
+                                 .equ	ACIaddr	= 0x002e	; Analog Comparator
+                                 .equ	TWIaddr	= 0x0030	; Two-wire Serial Interface
+                                 .equ	SPMRaddr	= 0x0032	; Store Program Memory Read
+                                 
+                                 .equ	INT_VECTORS_SIZE	= 52	; size in words
+                                 
+                                 #endif  /* _M328PDEF_INC_ */
+                                 
+                                 ; ***** END OF FILE ******************************************************
+                                 
+                                 ; VL6180 TOF Range Sensor.asm
+                                 ;
+                                 ; Created: 2018-05-12 14:39:56
+                                 ; Author : Mikael Glans
+                                 ;
+                                 
+                                 
+                                 
+                                 
+                                 .dseg
+000100                           PAGE_START_OLED: .BYTE 1 ; reserve 1 byte to PAGE_START_OLED
+000101                           PAGE_END_OLED: .BYTE 1 ; reserve 1 byte to PAGE_START_OLED
+000102                           COLUMN_START_OLED: .BYTE 1 ; reserve 1 byte to COLUMN_START_OLED 
+000103                           COLUMN_END_OLED: .BYTE 1 ; reserve 1 byte to COLUMN_START_OLED 
+                                 
+                                 .cseg
+                                 
+                                 
+                                 //---------System Clock init----------------
+                                   #define F_CPU 20000000 //
+                                  //---------System Clock init----------------
+                                  
+                                 		
+                                 
+                                 
+                                 
+                                 	
+                                 	//---------------I2C definitions and init----------------------
+                                 	//-------------------------------------------------------------
+                                 	
+                                 	.def INDEX_HI = r19
+                                 	.def INDEX_LO = r20
+                                 	.def DATA	  = r21
+000000 2755                      	clr DATA
+                                 	.equ SLA_W = 0x52 //0x52 slave adress, 0x29 and R/W=0
+                                 	.equ SLA_R = 0x53 //0x53 slave adress, 0x29 and R/W=1 
+                                 	.equ START = 0x08
+                                 	.equ R_START = 0x10
+                                 	.equ MT_SLA_ACK = 0x18
+                                 	.equ MR_SLA_ACK = 0x40
+                                 	.equ MT_DATA_ACK = 0x28
+                                 	.equ MR_DATA_ACK = 0x50
+                                 	.equ MT_DATA_NOACK = 0x30
+                                 	.equ MR_DATA_NOACK = 0x58
+                                 
+000001 e604                      	ldi r16, 100
+000002 d14f                      	rcall	WaitMiliseconds //wait .1s
+                                 
+                                 	// deactivate internal pullups for twi.
+000003 e000                      	ldi r16, (0<<PC4)|(0<<PC5)
+000004 9300 0007                 	sts DDRC, r16
+                                 
+                                 	//**********************OBS OBS OBS OBS********************************************************
+                                 	//This step below for SCL Speed 100 kHz TWI is crucial, it won´t work at all in any other case
+                                 	//Even Thou I2C it´s VERY time critical (Below 100kHz TWI won´t work. 
+                                 	//Comment on 2018-05-19 after days on troubleshooting.
+                                 	//------------SCL speed 400kHz @ 20MHz ATmega328p-----------
+000006 e101                      	ldi r16, 0x11
+000007 9300 00b8                 	sts TWBR, r16 //400kHz TWI
+000009 e000                      	ldi r16, (0<<TWPS1)|(0<<TWPS0) //Prescaler 1
+00000a 9300 00b9                 	sts TWSR, r16
+                                 	 //--------------------------------------------
+                                 	 //**********************OBS OBS OBS OBS********************************************************
+                                 
+                                 // enable twi module, acks, and twi interrupt
+00000c e405                      ldi r16, (1<<TWEN) | (1<<TWIE) | (1<<TWEA)
+00000d 9300 00bc                 sts TWCR, r16
+                                 	 
+                                 	//---------------I2C definitions and init----------------------
+                                 	//-------------------------------------------------------------
+                                 
+                                 		
+                                 
+                                 
+                                 
+                                 //---------------init of VL6180------------------------------------
+                                 //-----------------------------------------------------------------
+00000f d032                      rcall VL6180_settings
+                                 		
+000010 ec08                      		ldi r16, 200
+000011 d140                      		rcall	WaitMiliseconds //wait 1s
+000012 ec08                      		ldi r16, 200
+000013 d13e                      		rcall	WaitMiliseconds
+000014 ec08                      		ldi r16, 200
+000015 d13c                      		rcall	WaitMiliseconds //
+000016 ec08                      		ldi r16, 200
+000017 d13a                      		rcall	WaitMiliseconds
+000018 ec08                      		ldi r16, 200
+000019 d138                      		rcall	WaitMiliseconds
+00001a ec08                      		ldi r16, 200
+00001b d136                      		rcall	WaitMiliseconds
+                                 
+                                 //---------------init of VL6180------------------------------------
+                                 //-----------------------------------------------------------------
+00001c d2a8                       rcall LCD
+                                 
+                                 
+                                 
+                                 
+                                 ; Replace with your application code
+                                 main:
+                                 
+                                 
+00001d e604                      		ldi r16, 100
+00001e d133                      		rcall	WaitMiliseconds //wait
+                                 /*
+                                 
+                                 
+                                 		
+                                 		
+                                  wait0_1:
+                                 
+                                 ldi INDEX_HI, 0x00 //
+                                 ldi INDEX_LO, 0x4D //RESULT__RANGE_STATUS{0x4D}; 
+                                 //if [0] = 1 then 
+                                 //Device Ready. When set to 1, indicates the device mode and
+                                 //configuration can be changed and a new start command will be accepted
+                                 rcall VL6180Read ;output in DATA
+                                 
+                                 
+                                 
+                                 mov r16,DATA
+                                 sbrs r16,0
+                                 rjmp wait0_1
+                                 */
+                                 
+                                 
+00001f e604                      		ldi r16, 100
+000020 d131                      		rcall	WaitMiliseconds //wait
+                                 		
+                                 
+                                 
+000021 e030                      ldi INDEX_HI, 0x00 //
+000022 e144                      ldi INDEX_LO, 0x14 //
+000023 e054                      ldi DATA, 0x04
+000024 d1eb                      rcall VL6180Write
+                                 
+                                 
+                                 
+                                 
+000025 e604                      		ldi r16, 100
+000026 d12b                      		rcall	WaitMiliseconds //wait
+                                 		
+                                 
+                                 
+000027 e030                      ldi INDEX_HI, 0x00 //
+000028 e148                      ldi INDEX_LO, 0x18 //SYSRANGE_START{0x18}; [1] Ranging Mode Single-Shot, [0] starts a single measurement
+000029 e051                      ldi DATA, 0x01
+00002a d1e5                      rcall VL6180Write
+                                 
+                                 
+                                 
+00002b e604                      		ldi r16, 100
+00002c d125                      		rcall	WaitMiliseconds //wait
+                                 		
+                                 
+                                 wait0_0:
+00002d e030                      ldi INDEX_HI, 0x00 //
+00002e e44f                      ldi INDEX_LO, 0x4F //RESULT__INTERRUPT_STATUS_GPIO{0x4F}; if [2] = 1 then New Sample Ready threshold event
+00002f d22d                      rcall VL6180Read; output in DATA
+                                 
+                                 
+                                 
+                                 
+000030 2f05                      mov r16,DATA
+000031 ff02                      sbrs r16,2
+000032 cffa                      rjmp wait0_0
+                                 
+                                 
+                                 
+                                 //Why won´t the while-loop work and why is for example 0x4F reg and 0x10A always empty?
+                                 //Why won´t single shot ranging work?
+                                 //Try to change between Repeated Start and Stop---->Start in VL6180Read
+                                 //Does it require any other register settings in VL6180?
+                                 //Lägg till de övriga inställningarna 'Additional settings defaults from community'
+                                 
+                                 
+                                 
+000033 e604                      		ldi r16, 100
+000034 d11d                      		rcall	WaitMiliseconds //wait
+                                 		
+                                 
+                                 
+                                 
+000035 e030                      ldi INDEX_HI, 0x00 //
+000036 e642                      ldi INDEX_LO, 0x62 //RESULT__RANGE_VAL{0x62}
+000037 d225                      rcall VL6180Read ;output in DATA
+                                 
+000038 d124                      rcall LCDwrite
+                                 
+                                 
+000039 e604                      		ldi r16, 100
+00003a d117                      		rcall	WaitMiliseconds //wait
+                                 	
+                                 
+                                 
+00003b e030                      ldi INDEX_HI, 0x00 //
+00003c e145                      ldi INDEX_LO, 0x15 //SYSTEM__INTERRUPT_CLEAR{0x15}; [2] = 1 Clear Error Int, [1] = 1 Clear ALS Int, [0] = 1 Clear Range Int
+00003d e057                      ldi DATA, 0x07
+00003e d1d1                      rcall VL6180Write
+                                 
+                                 
+00003f e604                      		ldi r16, 100
+000040 d111                      		rcall	WaitMiliseconds //wait
+                                 	
+                                 
+                                 
+                                 
+                                 
+                                 		
+                                 
+000041 cfdb                      rjmp main
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 VL6180_settings:
+                                 
+000042 ec08                      		ldi r16, 200
+000043 d10e                      		rcall	WaitMiliseconds //
+                                 /*
+                                 wait0_2:
+                                 		
+                                 		
+                                 //SYSTEM__FRESH_OUT_OF_RESET {0x16}, check if bit 0 = 1
+                                 ldi INDEX_HI, 0x00 //
+                                 ldi INDEX_LO, 0x16 //
+                                 rcall VL6180Read; output in DATA
+                                 
+                                 mov r16,DATA
+                                 sbrs r16,0
+                                 rjmp wait0_2
+                                 */
+                                 
+000044 ec08                      		ldi r16, 200
+000045 d10c                      		rcall	WaitMiliseconds //
+                                 
+                                 		
+                                 
+                                 //------------Private registers-------------
+                                 //WriteByte(0x0207, 0x01);
+000046 e032                      ldi INDEX_HI, 0x02 //
+000047 e047                      ldi INDEX_LO, 0x07 //
+000048 e051                      ldi DATA, 0x01
+000049 d1c6                      rcall VL6180Write
+                                 //WriteByte(0x0208, 0x01);
+00004a e104                      		ldi r16, 20
+00004b d106                      		rcall	WaitMiliseconds
+00004c e032                      ldi INDEX_HI, 0x02 //
+00004d e048                      ldi INDEX_LO, 0x08 //
+00004e e051                      ldi DATA, 0x01
+00004f d1c0                      rcall VL6180Write
+                                 //WriteByte(0x0096, 0x00);
+000050 e104                      		ldi r16, 20
+000051 d100                      		rcall	WaitMiliseconds
+000052 e030                      ldi INDEX_HI, 0x00 //
+000053 e946                      ldi INDEX_LO, 0x96 //
+000054 e050                      ldi DATA, 0x00
+000055 d1ba                      rcall VL6180Write
+                                 //WriteByte(0x0097, 0xfd);
+000056 e104                      		ldi r16, 20
+000057 d0fa                      		rcall	WaitMiliseconds
+000058 e030                      ldi INDEX_HI, 0x00 //
+000059 e947                      ldi INDEX_LO, 0x97 //
+00005a ef5d                      ldi DATA, 0xfd
+00005b d1b4                      rcall VL6180Write
+                                 //WriteByte(0x00e3, 0x00);
+00005c e104                      		ldi r16, 20
+00005d d0f4                      		rcall	WaitMiliseconds
+00005e e030                      ldi INDEX_HI, 0x00 //
+00005f ee43                      ldi INDEX_LO, 0xe3 //
+000060 e050                      ldi DATA, 0x00
+000061 d1ae                      rcall VL6180Write
+                                 //WriteByte(0x00e4, 0x04);
+000062 e104                      		ldi r16, 20
+000063 d0ee                      		rcall	WaitMiliseconds
+000064 e030                      ldi INDEX_HI, 0x00 //
+000065 ee44                      ldi INDEX_LO, 0xe4 //
+000066 e054                      ldi DATA, 0x04
+000067 d1a8                      rcall VL6180Write
+                                 //WriteByte(0x00e5, 0x02);
+000068 e104                      		ldi r16, 20
+000069 d0e8                      		rcall	WaitMiliseconds
+00006a e030                      ldi INDEX_HI, 0x00 //
+00006b ee45                      ldi INDEX_LO, 0xe5 //
+00006c e052                      ldi DATA, 0x02
+00006d d1a2                      rcall VL6180Write
+                                 //WriteByte(0x00e6, 0x01);
+00006e e104                      		ldi r16, 20
+00006f d0e2                      		rcall	WaitMiliseconds
+000070 e030                      ldi INDEX_HI, 0x00 //
+000071 ee46                      ldi INDEX_LO, 0xe6 //
+000072 e051                      ldi DATA, 0x01
+000073 d19c                      rcall VL6180Write
+                                 //WriteByte(0x00e7, 0x03);
+000074 e104                      		ldi r16, 20
+000075 d0dc                      		rcall	WaitMiliseconds
+000076 e030                      ldi INDEX_HI, 0x00 //
+000077 ee47                      ldi INDEX_LO, 0xe7 //
+000078 e053                      ldi DATA, 0x03
+000079 d196                      rcall VL6180Write
+                                 //WriteByte(0x00f5, 0x02);
+00007a e104                      		ldi r16, 20
+00007b d0d6                      		rcall	WaitMiliseconds
+00007c e030                      ldi INDEX_HI, 0x00 //
+00007d ef45                      ldi INDEX_LO, 0xf5 //
+00007e e052                      ldi DATA, 0x02
+00007f d190                      rcall VL6180Write
+                                 //WriteByte(0x00d9, 0x05);
+000080 e104                      		ldi r16, 20
+000081 d0d0                      		rcall	WaitMiliseconds
+000082 e030                      ldi INDEX_HI, 0x00 //
+000083 ed49                      ldi INDEX_LO, 0xd9 //
+000084 e055                      ldi DATA, 0x05
+000085 d18a                      rcall VL6180Write
+                                 //WriteByte(0x00db, 0xce);
+000086 e104                      		ldi r16, 20
+000087 d0ca                      		rcall	WaitMiliseconds
+000088 e030                      ldi INDEX_HI, 0x00 //
+000089 ed4b                      ldi INDEX_LO, 0xdb //
+00008a ec5e                      ldi DATA, 0xce
+00008b d184                      rcall VL6180Write
+                                 //WriteByte(0x00dc, 0x03);
+00008c e104                      		ldi r16, 20
+00008d d0c4                      		rcall	WaitMiliseconds
+00008e e030                      ldi INDEX_HI, 0x00 //
+00008f ed4c                      ldi INDEX_LO, 0xdc //
+000090 e053                      ldi DATA, 0x03
+000091 d17e                      rcall VL6180Write
+                                 //WriteByte(0x00dd, 0xf8);
+000092 e104                      		ldi r16, 20
+000093 d0be                      		rcall	WaitMiliseconds
+000094 e030                      ldi INDEX_HI, 0x00 //
+000095 ed4d                      ldi INDEX_LO, 0xdd //
+000096 ef58                      ldi DATA, 0xf8
+000097 d178                      rcall VL6180Write
+                                 //WriteByte(0x009f, 0x00);
+000098 e104                      		ldi r16, 20
+000099 d0b8                      		rcall	WaitMiliseconds
+00009a e030                      ldi INDEX_HI, 0x00 //
+00009b e94f                      ldi INDEX_LO, 0x9f //
+00009c e050                      ldi DATA, 0x00
+00009d d172                      rcall VL6180Write
+                                 //WriteByte(0x00a3, 0x3c);
+00009e e104                      		ldi r16, 20
+00009f d0b2                      		rcall	WaitMiliseconds
+0000a0 e030                      ldi INDEX_HI, 0x00 //
+0000a1 ea43                      ldi INDEX_LO, 0xa3 //
+0000a2 e35c                      ldi DATA, 0x3c
+0000a3 d16c                      rcall VL6180Write
+                                 //WriteByte(0x00b7, 0x00);
+0000a4 e104                      		ldi r16, 20
+0000a5 d0ac                      		rcall	WaitMiliseconds
+0000a6 e030                      ldi INDEX_HI, 0x00 //
+0000a7 eb47                      ldi INDEX_LO, 0xb7 //
+0000a8 e050                      ldi DATA, 0x00
+0000a9 d166                      rcall VL6180Write
+                                 //WriteByte(0x00bb, 0x3c);
+0000aa e104                      		ldi r16, 20
+0000ab d0a6                      		rcall	WaitMiliseconds
+0000ac e030                      ldi INDEX_HI, 0x00 //
+0000ad eb4b                      ldi INDEX_LO, 0xbb //
+0000ae e35c                      ldi DATA, 0x3c
+0000af d160                      rcall VL6180Write
+                                 //WriteByte(0x00b2, 0x09);
+0000b0 e104                      		ldi r16, 20
+0000b1 d0a0                      		rcall	WaitMiliseconds
+0000b2 e030                      ldi INDEX_HI, 0x00 //
+0000b3 eb42                      ldi INDEX_LO, 0xb2 //
+0000b4 e059                      ldi DATA, 0x09
+0000b5 d15a                      rcall VL6180Write
+                                 //WriteByte(0x00ca, 0x09);
+0000b6 e104                      		ldi r16, 20
+0000b7 d09a                      		rcall	WaitMiliseconds
+0000b8 e030                      ldi INDEX_HI, 0x00 //
+0000b9 ec4a                      ldi INDEX_LO, 0xca //
+0000ba e059                      ldi DATA, 0x09
+0000bb d154                      rcall VL6180Write
+                                 //WriteByte(0x0198, 0x01);
+0000bc e104                      		ldi r16, 20
+0000bd d094                      		rcall	WaitMiliseconds
+0000be e031                      ldi INDEX_HI, 0x01 //
+0000bf e948                      ldi INDEX_LO, 0x98 //
+0000c0 e051                      ldi DATA, 0x01
+0000c1 d14e                      rcall VL6180Write
+                                 //WriteByte(0x01b0, 0x17);
+0000c2 e104                      		ldi r16, 20
+0000c3 d08e                      		rcall	WaitMiliseconds
+0000c4 e031                      ldi INDEX_HI, 0x01 //
+0000c5 eb40                      ldi INDEX_LO, 0xb0 //
+0000c6 e157                      ldi DATA, 0x17
+0000c7 d148                      rcall VL6180Write
+                                 //WriteByte(0x01ad, 0x00);
+0000c8 e104                      		ldi r16, 20
+0000c9 d088                      		rcall	WaitMiliseconds
+0000ca e031                      ldi INDEX_HI, 0x01 //
+0000cb ea4d                      ldi INDEX_LO, 0xad //
+0000cc e050                      ldi DATA, 0x00
+0000cd d142                      rcall VL6180Write
+                                 //WriteByte(0x00ff, 0x05);
+0000ce e104                      		ldi r16, 20
+0000cf d082                      		rcall	WaitMiliseconds
+0000d0 e030                      ldi INDEX_HI, 0x00 //
+0000d1 ef4f                      ldi INDEX_LO, 0xff //
+0000d2 e055                      ldi DATA, 0x05
+0000d3 d13c                      rcall VL6180Write
+                                 //WriteByte(0x0100, 0x05);
+0000d4 e104                      		ldi r16, 20
+0000d5 d07c                      		rcall	WaitMiliseconds
+0000d6 e031                      ldi INDEX_HI, 0x01 //
+0000d7 e040                      ldi INDEX_LO, 0x00 //
+0000d8 e055                      ldi DATA, 0x05
+0000d9 d136                      rcall VL6180Write
+                                 //WriteByte(0x0199, 0x05);
+0000da e104                      		ldi r16, 20
+0000db d076                      		rcall	WaitMiliseconds
+0000dc e031                      ldi INDEX_HI, 0x01 //
+0000dd e949                      ldi INDEX_LO, 0x99 //
+0000de e055                      ldi DATA, 0x05
+0000df d130                      rcall VL6180Write
+                                 //WriteByte(0x01a6, 0x1b);
+0000e0 e104                      		ldi r16, 20
+0000e1 d070                      		rcall	WaitMiliseconds
+0000e2 e031                      ldi INDEX_HI, 0x01 //
+0000e3 ea46                      ldi INDEX_LO, 0xa6 //
+0000e4 e15b                      ldi DATA, 0x1b
+0000e5 d12a                      rcall VL6180Write
+                                 //WriteByte(0x01ac, 0x3e);
+0000e6 e104                      		ldi r16, 20
+0000e7 d06a                      		rcall	WaitMiliseconds
+0000e8 e031                      ldi INDEX_HI, 0x01 //
+0000e9 ea4c                      ldi INDEX_LO, 0xac //
+0000ea e35e                      ldi DATA, 0x3e
+0000eb d124                      rcall VL6180Write
+                                 //WriteByte(0x01a7, 0x1f);
+0000ec e104                      		ldi r16, 20
+0000ed d064                      		rcall	WaitMiliseconds
+0000ee e031                      ldi INDEX_HI, 0x01 //
+0000ef ea47                      ldi INDEX_LO, 0xa7 //
+0000f0 e15f                      ldi DATA, 0x1f
+0000f1 d11e                      rcall VL6180Write
+                                 //WriteByte(0x0030, 0x00);
+0000f2 e104                      		ldi r16, 20
+0000f3 d05e                      		rcall	WaitMiliseconds
+0000f4 e030                      ldi INDEX_HI, 0x00 //
+0000f5 e340                      ldi INDEX_LO, 0x30 //
+0000f6 e050                      ldi DATA, 0x00
+0000f7 d118                      rcall VL6180Write
+                                 //------------Private registers------------
+                                 
+                                 
+                                 //----------Public registers--------------
+                                 //WriteByte(0x0011, 0x10);Enables polling for ‘New Sample ready’ when measurement completes
+0000f8 e104                      		ldi r16, 20
+0000f9 d058                      		rcall	WaitMiliseconds
+0000fa e030                      ldi INDEX_HI, 0x00 //
+0000fb e141                      ldi INDEX_LO, 0x11 //
+0000fc e150                      ldi DATA, 0x10
+0000fd d112                      rcall VL6180Write
+                                 //WriteByte(0x010a, 0x30); // Set the averaging sample period (compromise between lower noise and increased execution time)
+0000fe e104                      		ldi r16, 20
+0000ff d052                      		rcall	WaitMiliseconds
+000100 e031                      ldi INDEX_HI, 0x01 //
+000101 e04a                      ldi INDEX_LO, 0x0a //
+000102 e350                      ldi DATA, 0x30
+000103 d10c                      rcall VL6180Write
+                                 //WriteByte(0x003f, 0x46); // Sets the light and dark gain (upper nibble). Dark gain should not be changed.
+000104 e104                      		ldi r16, 20
+000105 d04c                      		rcall	WaitMiliseconds
+000106 e030                      ldi INDEX_HI, 0x00 //
+000107 e34f                      ldi INDEX_LO, 0x3f //
+000108 e456                      ldi DATA, 0x46
+000109 d106                      rcall VL6180Write
+                                 //WriteByte(0x0031, 0xFF); // sets the # of range measurements after which auto calibration of system is performed
+00010a e104                      		ldi r16, 20
+00010b d046                      		rcall	WaitMiliseconds
+00010c e030                      ldi INDEX_HI, 0x00 //
+00010d e341                      ldi INDEX_LO, 0x31 //
+00010e ef5f                      ldi DATA, 0xFF
+00010f d100                      rcall VL6180Write
+                                 //WriteByte(0x0040, 0x63); // Set ALS integration time to 100ms
+000110 e104                      		ldi r16, 20
+000111 d040                      		rcall	WaitMiliseconds
+000112 e030                      ldi INDEX_HI, 0x00 //
+000113 e440                      ldi INDEX_LO, 0x40 //
+000114 e653                      ldi DATA, 0x63
+000115 d0fa                      rcall VL6180Write
+                                 //WriteByte(0x002e, 0x01); // perform a single temperature calibration of the ranging sensor
+000116 e104                      		ldi r16, 20
+000117 d03a                      		rcall	WaitMiliseconds
+000118 e030                      ldi INDEX_HI, 0x00 //
+000119 e24e                      ldi INDEX_LO, 0x2e //
+00011a e051                      ldi DATA, 0x01
+00011b d0f4                      rcall VL6180Write
+                                 //WriteByte(0x001b, 0x09); // Set default ranging inter-measurement period to 100ms
+00011c e104                      		ldi r16, 20
+00011d d034                      		rcall	WaitMiliseconds
+00011e e030                      ldi INDEX_HI, 0x00 //
+00011f e14b                      ldi INDEX_LO, 0x1b //
+000120 e059                      ldi DATA, 0x09
+000121 d0ee                      rcall VL6180Write
+                                 //WriteByte(0x003e, 0x31); // Set default ALS inter-measurement period to 500ms
+000122 e104                      		ldi r16, 20
+000123 d02e                      		rcall	WaitMiliseconds
+000124 e030                      ldi INDEX_HI, 0x00 //
+000125 e34e                      ldi INDEX_LO, 0x3e //
+000126 e351                      ldi DATA, 0x31
+000127 d0e8                      rcall VL6180Write
+                                 //WriteByte(0x0014, 0x24); // Configures interrupt on ‘New Sample Ready threshold event’
+000128 e104                      		ldi r16, 20
+000129 d028                      		rcall	WaitMiliseconds
+00012a e030                      ldi INDEX_HI, 0x00 //
+00012b e144                      ldi INDEX_LO, 0x14 //
+00012c e254                      ldi DATA, 0x24
+00012d d0e2                      rcall VL6180Write
+00012e e104                      		ldi r16, 20
+00012f d022                      		rcall	WaitMiliseconds
+                                 //----------Public registers--------------
+                                 
+                                 
+                                 //Additional settings defaults from community
+                                  // VL6180x_setRegister(VL6180X_SYSRANGE_MAX_CONVERGENCE_TIME, 0x32);
+000130 e030                      ldi INDEX_HI, 0x00 //
+000131 e14c                      ldi INDEX_LO, 0x1C //
+000132 e352                      ldi DATA, 0x32
+000133 d0dc                      rcall VL6180Write
+000134 e104                      		ldi r16, 20
+000135 d01c                      		rcall	WaitMiliseconds
+                                 // VL6180x_setRegister(VL6180X_SYSRANGE_RANGE_CHECK_ENABLES, 0x10 | 0x01);??????Two Values?
+000136 e030                      ldi INDEX_HI, 0x00 //
+000137 e24d                      ldi INDEX_LO, 0x2D //
+000138 e151                      ldi DATA, 0x11
+000139 d0d6                      rcall VL6180Write
+00013a e104                      		ldi r16, 20
+00013b d016                      		rcall	WaitMiliseconds
+                                 /*
+                                 //VL6180x_setRegister16bit(VL6180X_SYSRANGE_EARLY_CONVERGENCE_ESTIMATE, 0x7B);
+                                 ldi INDEX_HI, 0x00 //
+                                 ldi INDEX_LO, 0x22 //
+                                 ldi DATA, 0x7B
+                                 rcall VL6180Write
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 //VL6180x_setRegister16bit(VL6180X_SYSALS_INTEGRATION_PERIOD, 0x64);
+                                 ldi INDEX_HI, 0x00 //
+                                 ldi INDEX_LO, 0x40 //
+                                 ldi DATA, 0x64
+                                 rcall VL6180Write
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 */
+                                 //VL6180x_setRegister(VL6180X_READOUT_AVERAGING_SAMPLE_PERIOD,0x30);
+00013c e031                      ldi INDEX_HI, 0x01 //
+00013d e04a                      ldi INDEX_LO, 0x0A //
+00013e e350                      ldi DATA, 0x30
+00013f d0d0                      rcall VL6180Write
+000140 e104                      		ldi r16, 20
+000141 d010                      		rcall	WaitMiliseconds
+                                 //VL6180x_setRegister(VL6180X_SYSALS_ANALOGUE_GAIN,0x40);
+000142 e030                      ldi INDEX_HI, 0x00 //
+000143 e34f                      ldi INDEX_LO, 0x3F //
+000144 e450                      ldi DATA, 0x40
+000145 d0ca                      rcall VL6180Write
+000146 e104                      		ldi r16, 20
+000147 d00a                      		rcall	WaitMiliseconds
+                                 //VL6180x_setRegister(VL6180X_FIRMWARE_RESULT_SCALER,0x01);
+000148 e031                      ldi INDEX_HI, 0x01 //
+000149 e240                      ldi INDEX_LO, 0x20 //
+00014a e051                      ldi DATA, 0x01
+00014b d0c4                      rcall VL6180Write
+00014c e104                      		ldi r16, 20
+00014d d004                      		rcall	WaitMiliseconds
+                                   
+                                 
+                                 /*
+                                  //SYSTEM__FRESH_OUT_OF_RESET {0x16}, write 0x00
+                                 ldi INDEX_HI, 0x00 //
+                                 ldi INDEX_LO, 0x16 //
+                                 ldi DATA, 0x00
+                                 rcall VL6180Write
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 */		
+                                 
+                                 
+00014e 9508                      ret
+                                 
+                                 
+                                 
+                                 
+                                 #include "wait.asm" ; AVR Assembler v.2
+                                 
+                                  * wait.asm
+                                  *
+                                  *  Created: 2015-01-01 18:40:21
+                                  *   Author: Mikael
+                                  */ 
+                                 
+                                 
+                                 ;------------------------------------------------------------------------------
+                                 ; Busy-wait loops utilities module
+                                 ; For F_CPU >= 4MHz
+                                 ; http://avr-mcu.dxp.pl
+                                 ; (c) Radoslaw Kwiecien, 2008
+                                 ;------------------------------------------------------------------------------
+                                 
+                                 #ifndef F_CPU
+                                 #endif
+                                 
+                                 #if F_CPU < 4000000
+                                 #endif
+                                 
+                                 #define CYCLES_PER_US (F_CPU/1000000)
+                                 #define C4PUS (CYCLES_PER_US/4)
+                                 #define DVUS(x) (C4PUS*x)
+                                 
+                                 ;------------------------------------------------------------------------------
+                                 ; Input : XH:XL - number of CPU cycles to wait (divided by four)
+                                 ;------------------------------------------------------------------------------
+                                 Wait4xCycles:
+00014f 9711                        sbiw	  XH:XL, 1
+000150 f7f1                        brne	  Wait4xCycles
+000151 9508                        ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Input : r16 - number of miliseconds to wait
+                                 ;------------------------------------------------------------------------------
+                                 WaitMiliseconds:
+000152 930f                        push	r16
+                                 WaitMsLoop: 
+000153 e0b9                        ldi	   XH,HIGH(DVUS(500))
+000154 eca4                        ldi	   XL,LOW(DVUS(500))
+000155 dff9                        rcall	 Wait4xCycles
+000156 e0b9                        ldi	   XH,HIGH(DVUS(500))
+000157 eca4                        ldi	   XL,LOW(DVUS(500))
+000158 dff6                        rcall	 Wait4xCycles
+000159 950a                        dec	   r16
+00015a f7c1                        brne	  WaitMsLoop
+00015b 910f                        pop	   r16
+00015c 9508                        ret
+                                 ;------------------------------------------------------------------------------
+                                 ; End of file
+                                 
+                                  ;------------------------------------------------------------------------------
+                                 ; 1-wire definitions
+                                 ;------------------------------------------------------------------------------
+                                 .equ	OW_PORT	= PORTD
+                                 .equ	OW_PIN	= PIND
+                                 .equ	OW_DDR	= DDRD
+                                 .equ	OW_DQ	= PD4
+                                 
+                                 .def	OWCount = r17
+                                 ;------------------------------------------------------------------------------
+                                 ; 1-wire definitions
+                                 ;------------------------------------------------------------------------------
+                                 
+                                 
+                                 LCDwrite:
+00015d e020                      	ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A Clear Display
+00015e d1fb                      	rcall DAC
+00015f e104                      		ldi r16, 20
+000160 dff1                      		rcall	WaitMiliseconds
+000161 e420                      	ldi r18, 0b01000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000162 d1f7                      	rcall DAC
+000163 e104                      		ldi r16, 20
+000164 dfed                      		rcall	WaitMiliseconds
+000165 e020                      	ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000166 d1f3                      	rcall DAC
+000167 e104                      		ldi r16, 20
+000168 dfe9                      		rcall	WaitMiliseconds
+000169 e024                      	ldi r18, 0b00000100 //format RS:E:D7:D6:D5:D4:N/A:N/A 
+00016a d1ef                      	rcall DAC
+00016b e104                      		ldi r16, 20
+00016c dfe5                      		rcall	WaitMiliseconds
+00016d e424                      	ldi r18, 0b01000100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00016e d1eb                      	rcall DAC
+00016f e104                      		ldi r16, 20
+000170 dfe1                      		rcall	WaitMiliseconds
+000171 e024                      	ldi r18, 0b00000100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000172 d1e7                      	rcall DAC
+000173 e104                      		ldi r16, 20
+000174 dfdd                      		rcall	WaitMiliseconds
+                                 
+                                 
+                                 
+000175 e920                      		ldi r18, 0b10010000 //format RS:E:D7:D6:D5:D4:N/A:N/A "J"
+000176 d1e3                      	rcall DAC
+000177 e104                      		ldi r16, 20
+000178 dfd9                      		rcall	WaitMiliseconds
+000179 ed20                      	ldi r18, 0b11010000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00017a d1df                      	rcall DAC
+00017b e104                      		ldi r16, 20
+00017c dfd5                      		rcall	WaitMiliseconds
+00017d e920                      	ldi r18, 0b10010000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00017e d1db                      	rcall DAC
+00017f e104                      		ldi r16, 20
+000180 dfd1                      		rcall	WaitMiliseconds
+000181 ea28                      	ldi r18, 0b10101000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000182 d1d7                      	rcall DAC
+000183 e104                      		ldi r16, 20
+000184 dfcd                      		rcall	WaitMiliseconds
+000185 ee28                      	ldi r18, 0b11101000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000186 d1d3                      	rcall DAC
+000187 e104                      		ldi r16, 20
+000188 dfc9                      		rcall	WaitMiliseconds
+000189 ea28                      	ldi r18, 0b10101000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00018a d1cf                      	rcall DAC
+00018b e104                      		ldi r16, 20
+00018c dfc5                      		rcall	WaitMiliseconds
+                                 
+00018d e928                      	ldi r18, 0b10011000 //format RS:E:D7:D6:D5:D4:N/A:N/A "e"
+00018e d1cb                      	rcall DAC
+00018f e104                      		ldi r16, 20
+000190 dfc1                      		rcall	WaitMiliseconds
+000191 ed28                      	ldi r18, 0b11011000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000192 d1c7                      	rcall DAC
+000193 e104                      		ldi r16, 20
+000194 dfbd                      		rcall	WaitMiliseconds
+000195 e928                      	ldi r18, 0b10011000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000196 d1c3                      	rcall DAC
+000197 e104                      		ldi r16, 20
+000198 dfb9                      		rcall	WaitMiliseconds
+000199 e924                      	ldi r18, 0b10010100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00019a d1bf                      	rcall DAC
+00019b e104                      		ldi r16, 20
+00019c dfb5                      		rcall	WaitMiliseconds
+00019d ed24                      	ldi r18, 0b11010100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00019e d1bb                      	rcall DAC
+00019f e104                      		ldi r16, 20
+0001a0 dfb1                      		rcall	WaitMiliseconds
+0001a1 e924                      	ldi r18, 0b10010100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001a2 d1b7                      	rcall DAC
+0001a3 e104                      		ldi r16, 20
+0001a4 dfad                      		rcall	WaitMiliseconds
+                                 
+0001a5 e92c                      	ldi r18, 0b10011100 //format RS:E:D7:D6:D5:D4:N/A:N/A "s"
+0001a6 d1b3                      	rcall DAC
+0001a7 e104                      		ldi r16, 20
+0001a8 dfa9                      		rcall	WaitMiliseconds
+0001a9 ed2c                      	ldi r18, 0b11011100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001aa d1af                      	rcall DAC
+0001ab e104                      		ldi r16, 20
+0001ac dfa5                      		rcall	WaitMiliseconds
+0001ad e92c                      	ldi r18, 0b10011100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001ae d1ab                      	rcall DAC
+0001af e104                      		ldi r16, 20
+0001b0 dfa1                      		rcall	WaitMiliseconds
+0001b1 e82c                      	ldi r18, 0b10001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001b2 d1a7                      	rcall DAC
+0001b3 e104                      		ldi r16, 20
+0001b4 df9d                      		rcall	WaitMiliseconds
+0001b5 ec2c                      	ldi r18, 0b11001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001b6 d1a3                      	rcall DAC
+0001b7 e104                      		ldi r16, 20
+0001b8 df99                      		rcall	WaitMiliseconds
+0001b9 e82c                      	ldi r18, 0b10001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001ba d19f                      	rcall DAC
+0001bb e104                      		ldi r16, 20
+0001bc df95                      		rcall	WaitMiliseconds
+                                 
+0001bd e92c                      	ldi r18, 0b10011100 //format RS:E:D7:D6:D5:D4:N/A:N/A "u"
+0001be d19b                      	rcall DAC
+0001bf e104                      		ldi r16, 20
+0001c0 df91                      		rcall	WaitMiliseconds
+0001c1 ed2c                      	ldi r18, 0b11011100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001c2 d197                      	rcall DAC
+0001c3 e104                      		ldi r16, 20
+0001c4 df8d                      		rcall	WaitMiliseconds
+0001c5 e92c                      	ldi r18, 0b10011100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001c6 d193                      	rcall DAC
+0001c7 e104                      		ldi r16, 20
+0001c8 df89                      		rcall	WaitMiliseconds
+0001c9 e924                      	ldi r18, 0b10010100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001ca d18f                      	rcall DAC
+0001cb e104                      		ldi r16, 20
+0001cc df85                      		rcall	WaitMiliseconds
+0001cd ed24                      	ldi r18, 0b11010100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001ce d18b                      	rcall DAC
+0001cf e104                      		ldi r16, 20
+0001d0 df81                      		rcall	WaitMiliseconds
+0001d1 e924                      	ldi r18, 0b10010100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001d2 d187                      	rcall DAC
+0001d3 e104                      		ldi r16, 20
+0001d4 df7d                      		rcall	WaitMiliseconds
+                                 
+                                 	
+0001d5 e92c                      		ldi r18, 0b10011100 //format RS:E:D7:D6:D5:D4:N/A:N/A "s"
+0001d6 d183                      	rcall DAC
+0001d7 e104                      		ldi r16, 20
+0001d8 df79                      		rcall	WaitMiliseconds
+0001d9 ed2c                      	ldi r18, 0b11011100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001da d17f                      	rcall DAC
+0001db e104                      		ldi r16, 20
+0001dc df75                      		rcall	WaitMiliseconds
+0001dd e92c                      	ldi r18, 0b10011100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001de d17b                      	rcall DAC
+0001df e104                      		ldi r16, 20
+0001e0 df71                      		rcall	WaitMiliseconds
+0001e1 e82c                      	ldi r18, 0b10001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001e2 d177                      	rcall DAC
+0001e3 e104                      		ldi r16, 20
+0001e4 df6d                      		rcall	WaitMiliseconds
+0001e5 ec2c                      	ldi r18, 0b11001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001e6 d173                      	rcall DAC
+0001e7 e104                      		ldi r16, 20
+0001e8 df69                      		rcall	WaitMiliseconds
+0001e9 e82c                      	ldi r18, 0b10001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001ea d16f                      	rcall DAC
+0001eb e104                      		ldi r16, 20
+0001ec df65                      		rcall	WaitMiliseconds
+                                 
+                                 
+                                 
+                                 // Write result in Range Value to the LCD display
+0001ed e82c                      ldi r18, 0b10001100 //format RS:E:D7:D6:D5:D4:N/A:N/A 
+0001ee d16b                      	rcall DAC
+0001ef e104                      		ldi r16, 20
+0001f0 df61                      		rcall	WaitMiliseconds
+0001f1 ec2c                      	ldi r18, 0b11001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001f2 d167                      	rcall DAC
+0001f3 e104                      		ldi r16, 20
+0001f4 df5d                      		rcall	WaitMiliseconds
+0001f5 e82c                      	ldi r18, 0b10001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001f6 d163                      	rcall DAC
+0001f7 e104                      		ldi r16, 20
+0001f8 df59                      		rcall	WaitMiliseconds
+                                 
+0001f9 9556                      lsr DATA
+0001fa 9556                      lsr DATA
+0001fb 735c                      andi DATA, 0b00111100
+                                 
+0001fc e800                      ldi r16, 0b10000000
+0001fd 2b50                      or DATA, r16
+0001fe 2f25                      	mov r18, DATA //format RS:E:D7:D6:D5:D4:N/A:N/A
+0001ff d15a                      	rcall DAC
+000200 e104                      		ldi r16, 20
+000201 df50                      		rcall	WaitMiliseconds
+                                 
+000202 ec00                      ldi r16, 0b11000000
+000203 2b50                      or DATA, r16
+000204 2f25                      	mov r18, DATA //format RS:E:D7:D6:D5:D4:N/A:N/A
+000205 d154                      	rcall DAC
+000206 e104                      		ldi r16, 20
+000207 df4a                      		rcall	WaitMiliseconds
+                                 
+000208 e800                      ldi r16, 0b10000000
+000209 2b50                      or DATA, r16
+00020a 2f25                      	mov r18, DATA //format RS:E:D7:D6:D5:D4:N/A:N/A
+00020b d14e                      	rcall DAC
+00020c e104                      		ldi r16, 20
+00020d df44                      		rcall	WaitMiliseconds
+                                 // Write result in Range Value to the LCD display
+                                 
+                                 
+                                 
+                                 
+                                 /*
+                                 	ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A Clear Display
+                                 	rcall DAC
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 	ldi r18, 0b01000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+                                 	rcall DAC
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 	ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+                                 	rcall DAC
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 	ldi r18, 0b00000100 //format RS:E:D7:D6:D5:D4:N/A:N/A 
+                                 	rcall DAC
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 	ldi r18, 0b01000100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+                                 	rcall DAC
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 	ldi r18, 0b00000100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+                                 	rcall DAC
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 */
+                                 
+                                 		
+00020e 9508                      ret
+                                 
+                                 
+                                 
+                                 ERROR1:
+                                 ;rcall LCD
+00020f 9508                      ret
+                                 
+                                 ;writes two bytes with the selected start register
+                                 VL6180Write://(byte index_hi, byte index_lo, byte data){
+                                   
+                                  
+                                     //TWCR = (1<<TWINT)|(1<<TWSTA)|
+                                     //(1<<TWEN);
+000210 ea04                      	ldi r16, (1<<TWINT)|(1<<TWSTA)|(1<<TWEN)
+000211 9300 00bc                 	sts TWCR, r16
+                                     
+                                     //while (!(TWCR & (1<<TWINT)))
+                                     ;
+                                     wait1:
+000213 9100 00bc                 	lds r16,TWCR
+000215 ff07                      	sbrs r16,TWINT
+000216 cffc                      	rjmp wait1
+                                 
+                                     //if ((TWSR & 0xF8) != START)
+                                     //ERROR();
+000217 9100 00b9                     lds r16,TWSR
+000219 7f08                      	andi r16, 0xF8
+00021a 3008                      	cpi r16, START
+00021b f799                      	brne ERROR1
+                                 
+                                 	
+                                     //TWDR = SLA_W;
+                                     //TWCR = (1<<TWINT) |
+                                     //(1<<TWEN);
+00021c e502                      	ldi r16, SLA_W
+00021d 9300 00bb                 	sts TWDR, r16
+00021f e804                      	ldi r16, (1<<TWINT)|(1<<TWEN)
+000220 9300 00bc                 	sts TWCR, r16
+                                     
+                                 	
+                                     //while (!(TWCR & (1<<TWINT)))
+                                     //;
+                                 	wait2:
+000222 9100 00bc                 	lds r16,TWCR
+000224 ff07                      	sbrs r16,TWINT
+000225 cffc                      	rjmp wait2
+                                 
+                                     
+                                     //if ((TWSR & 0xF8) !=
+                                     //MT_SLA_ACK)
+                                     //ERROR();
+000226 9100 00b9                 	lds r16,TWSR
+000228 7f08                      	andi r16, 0xF8
+000229 3108                      	cpi r16, MT_SLA_ACK
+00022a f721                      	brne ERROR1
+                                 
+                                     
+                                 	
+                                 
+                                     //---------------------
+                                     //TWDR = index_hi; //
+                                     //TWCR = (1<<TWINT) |
+                                     //(1<<TWEN);
+00022b 2f03                          mov r16, INDEX_HI //ex. INDEX_HI
+00022c 9300 00bb                 	sts TWDR, r16
+00022e e804                      	ldi r16, (1<<TWINT)|(1<<TWEN)
+00022f 9300 00bc                 	sts TWCR, r16
+                                 
+                                 	
+                                     //while (!(TWCR & (1<<TWINT)))
+                                     //;
+                                 	wait3:
+000231 9100 00bc                 	lds r16,TWCR
+000233 ff07                      	sbrs r16,TWINT
+000234 cffc                      	rjmp wait3
+                                     
+                                 	
+                                     //if ((TWSR & 0xF8) !=
+                                     //MT_DATA_ACK)
+                                     //ERROR();
+000235 9100 00b9                 	lds r16,TWSR
+000237 7f08                      	andi r16, 0xF8 
+000238 3208                      	cpi r16, MT_DATA_ACK
+000239 f511                      	brne ERROR2
+                                 	//---------------------
+                                 
+                                     //---------------------
+                                     //TWDR = index_lo; //
+                                     //TWCR = (1<<TWINT) |
+                                     //(1<<TWEN);
+00023a 2f04                          mov r16, INDEX_LO //ex. INDEX_LO
+00023b 9300 00bb                 	sts TWDR, r16
+00023d e804                      	ldi r16, (1<<TWINT)|(1<<TWEN)
+00023e 9300 00bc                 	sts TWCR, r16
+                                 
+                                 	
+                                     //while (!(TWCR & (1<<TWINT)))
+                                     //;
+                                 	wait4:
+000240 9100 00bc                 	lds r16,TWCR
+000242 ff07                      	sbrs r16,TWINT
+000243 cffc                      	rjmp wait4
+                                     
+                                 	
+                                     //if ((TWSR & 0xF8) !=
+                                     //MT_DATA_ACK)
+                                     //ERROR();
+000244 9100 00b9                 	lds r16,TWSR
+000246 7f08                      	andi r16, 0xF8
+000247 3208                      	cpi r16, MT_DATA_ACK
+000248 f499                      	brne ERROR2
+                                 	//---------------------
+                                 
+                                 	//---------------------
+                                     //TWDR = data; //
+                                     //TWCR = (1<<TWINT) |
+                                     //(1<<TWEN);
+000249 2f05                          mov r16, DATA //ex. DATA
+00024a 9300 00bb                 	sts TWDR, r16
+00024c e804                      	ldi r16, (1<<TWINT)|(1<<TWEN)
+00024d 9300 00bc                 	sts TWCR, r16
+                                 
+                                 	
+                                     //while (!(TWCR & (1<<TWINT)))
+                                     //;
+                                 	wait5:
+00024f 9100 00bc                 	lds r16,TWCR
+000251 ff07                      	sbrs r16,TWINT
+000252 cffc                      	rjmp wait5
+                                     
+                                 	
+                                     //if ((TWSR & 0xF8) !=
+                                     //MT_DATA_ACK)
+                                     //ERROR();
+000253 9100 00b9                 	lds r16,TWSR
+000255 7f08                      	andi r16, 0xF8
+000256 3208                      	cpi r16, MT_DATA_ACK
+000257 f421                      	brne ERROR2
+                                 	//---------------------
+                                 
+                                 
+                                     //TWCR = (1<<TWINT)|(1<<TWEN)|
+                                     //(1<<TWSTO);
+000258 e904                      	ldi r16,(1<<TWINT)|(1<<TWEN)|(1<<TWSTO)
+000259 9300 00bc                 	sts TWCR, r16
+                                 
+00025b 9508                      ret
+                                 
+                                 
+                                 ERROR2: 
+                                 ;rcall LCD
+00025c 9508                      ret
+                                 
+                                 ;reads two bytes with the selected start register
+                                 VL6180Read://(byte index_hi, index_lo){
+                                 
+                                 
+                                       //byte data;  
+                                        
+                                       //TWCR = (1<<TWINT)|(1<<TWSTA)|
+                                       //(1<<TWEN); //Start Condition
+00025d ea04                      	  ldi r16, (1<<TWINT)|(1<<TWSTA)|(1<<TWEN)
+00025e 9300 00bc                 	  sts TWCR, r16
+                                       
+                                       //while (!(TWCR & (1<<TWINT)))
+                                       //;
+                                 	  wait6:
+000260 9100 00bc                 	  lds r16,TWCR
+000262 ff07                      	  sbrs r16,TWINT
+000263 cffc                      	  rjmp wait6
+                                 
+                                       
+                                       //if ((TWSR & 0xF8) != START)
+                                       //ERROR();
+000264 9100 00b9                 	  lds r16,TWSR
+000266 7f08                      	  andi r16, 0xF8
+000267 3008                      	  cpi r16, START
+000268 f799                      	  brne ERROR2
+                                       
+                                 
+                                 	  
+                                       //TWDR = SLA_W;
+                                       //TWCR = (1<<TWINT) |
+                                       //(1<<TWEN);
+000269 e502                      	  ldi r16, SLA_W
+00026a 9300 00bb                 	  sts TWDR, r16
+00026c e804                      	  ldi r16, (1<<TWINT)|(1<<TWEN)
+00026d 9300 00bc                 	  sts TWCR, r16
+                                       
+                                 	  
+                                       //while (!(TWCR & (1<<TWINT)))
+                                       //;
+                                       wait7:
+00026f 9100 00bc                 	  lds r16,TWCR
+000271 ff07                      	  sbrs r16,TWINT
+000272 cffc                      	  rjmp wait7
+                                 
+                                 	 
+                                       //if ((TWSR & 0xF8) !=
+                                       //MT_SLA_ACK)
+                                       //ERROR();
+000273 9100 00b9                 	  lds r16,TWSR
+000275 7f08                      	  andi r16, 0xF8
+000276 3108                      	  cpi r16, MT_SLA_ACK
+000277 f721                      	  brne ERROR2
+                                       
+                                 	  //---------------------
+                                     //TWDR = index_hi; //
+                                     //TWCR = (1<<TWINT) |
+                                     //(1<<TWEN);
+000278 2f03                          mov r16, INDEX_HI //ex. INDEX_HI
+000279 9300 00bb                 	sts TWDR, r16
+00027b e804                      	ldi r16, (1<<TWINT)|(1<<TWEN)
+00027c 9300 00bc                 	sts TWCR, r16
+                                 
+                                 	
+                                     //while (!(TWCR & (1<<TWINT)))
+                                     //;
+                                 	wait8:
+00027e 9100 00bc                 	lds r16,TWCR
+000280 ff07                      	sbrs r16,TWINT
+000281 cffc                      	rjmp wait8
+                                     
+                                 	
+                                     //if ((TWSR & 0xF8) !=
+                                     //MT_DATA_ACK)
+                                     //ERROR();
+000282 9100 00b9                 	lds r16,TWSR
+000284 7f08                      	andi r16, 0xF8
+000285 3208                      	cpi r16, MT_DATA_ACK
+000286 f6a9                      	brne ERROR2
+                                 	//---------------------
+                                 
+                                 	 //---------------------
+                                     //TWDR = index_lo; //
+                                     //TWCR = (1<<TWINT) |
+                                     //(1<<TWEN);
+000287 2f04                          mov r16, INDEX_LO //ex. INDEX_LO
+000288 9300 00bb                 	sts TWDR, r16
+00028a e804                      	ldi r16, (1<<TWINT)|(1<<TWEN)
+00028b 9300 00bc                 	sts TWCR, r16
+                                 
+                                 	
+                                     //while (!(TWCR & (1<<TWINT)))
+                                     //;
+                                 	wait9:
+00028d 9100 00bc                 	lds r16,TWCR
+00028f ff07                      	sbrs r16,TWINT
+000290 cffc                      	rjmp wait9
+                                     
+                                 	
+                                     //if ((TWSR & 0xF8) !=
+                                     //MT_DATA_ACK)
+                                     //ERROR();
+000291 9100 00b9                 	lds r16,TWSR
+000293 7f08                      	andi r16, 0xF8
+000294 3208                      	cpi r16, MT_DATA_ACK
+000295 f631                      	brne ERROR2
+                                 	//---------------------
+                                 
+                                      
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 /*
+                                 	 //TWCR = (1<<TWINT)|(1<<TWEN)|
+                                     //(1<<TWSTO);
+                                 	ldi r16,(1<<TWINT)|(1<<TWEN)|(1<<TWSTO)
+                                 	sts TWCR, r16
+                                 
+                                 
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds //wait
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds //
+                                 		ldi r16, 20
+                                 		rcall	WaitMiliseconds
+                                 
+                                 
+                                 	//TWCR = (1<<TWINT)|(1<<TWSTA)|
+                                     //(1<<TWEN);
+                                 	ldi r16, (1<<TWINT)|(1<<TWSTA)|(1<<TWEN)
+                                 	sts TWCR, r16
+                                 
+                                 	//while (!(TWCR & (1<<TWINT)))
+                                       //;
+                                 	  wait6_1:
+                                 	  lds r16,TWCR
+                                 	  sbrs r16,TWINT
+                                 	  rjmp wait6_1
+                                 
+                                       
+                                       //if ((TWSR & 0xF8) != START)
+                                       //ERROR();
+                                 	  lds r16,TWSR
+                                 	  andi r16, 0xF8
+                                 	  cpi r16, START
+                                 	  brne ERROR3
+                                 */
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 	  
+                                       //TWCR = (1<<TWINT)|(1<<TWSTA)|
+                                       //(1<<TWEN); //Repeated Start Condition OBS!! Will Repeated Start Work? See p.38 in VL6180 datasheet.
+000296 ea04                            ldi r16, (1<<TWINT)|(1<<TWSTA)|(1<<TWEN)
+000297 9300 00bc                 	  sts TWCR, r16
+                                 	  
+                                 	  
+                                       //while (!(TWCR & (1<<TWINT)))
+                                       //;
+                                       wait10:
+000299 9100 00bc                 	  lds r16,TWCR
+00029b ff07                      	  sbrs r16,TWINT
+00029c cffc                      	  rjmp wait10
+                                 
+                                 	  
+                                       //if ((TWSR & 0xF8) != R_START)
+                                       //ERROR();
+00029d 9100 00b9                 	  lds r16,TWSR
+00029f 7f08                      	  andi r16, 0xF8
+0002a0 3100                      	  cpi r16, R_START
+0002a1 f511                      	  brne ERROR3
+                                 
+                                 
+                                 
+                                       
+                                       
+                                       //TWDR = SLA_R;
+                                       //TWCR = (1<<TWINT) |
+                                       //(1<<TWEN);
+0002a2 e503                            ldi r16, SLA_R
+0002a3 9300 00bb                 	  sts TWDR, r16
+0002a5 e804                      	  ldi r16, (1<<TWINT)|(1<<TWEN)
+0002a6 9300 00bc                 	  sts TWCR, r16
+                                 
+                                 	  
+                                       //while (!(TWCR & (1<<TWINT)))
+                                       //;
+                                 	  wait11:
+0002a8 9100 00bc                 	  lds r16,TWCR
+0002aa ff07                      	  sbrs r16,TWINT
+0002ab cffc                      	  rjmp wait11
+                                       
+                                 	 
+                                       //if ((TWSR & 0xF8) !=
+                                       //MR_SLA_ACK)
+                                       //ERROR();
+0002ac 9100 00b9                 	  lds r16,TWSR
+0002ae 7f08                      	  andi r16, 0xF8
+0002af 3400                      	  cpi r16, MR_SLA_ACK
+0002b0 f499                      	  brne ERROR3
+                                 
+                                       
+                                       //TWCR = (1<<TWINT) |
+                                       //(0<<TWEA)|(1<<TWEN); //Data byte will be received and 
+                                                             //NOT ACK TWEA=0 will be returned
+0002b1 e804                            ldi r16, (1<<TWINT)|(0<<TWEA)|(1<<TWEN)
+0002b2 9300 00bc                 	  sts TWCR, r16
+                                 	  
+                                 	  
+                                       //while (!(TWCR & (1<<TWINT)))
+                                       //;
+                                 	  wait12:
+0002b4 9100 00bc                 	  lds r16,TWCR
+0002b6 ff07                      	  sbrs r16,TWINT
+0002b7 cffc                      	  rjmp wait12
+                                       
+                                 	  
+                                       //if ((TWSR & 0xF8) !=
+                                       //MR_DATA_NOACK)
+                                       //ERROR();
+0002b8 9100 00b9                 	  lds r16,TWSR
+0002ba 7f08                      	  andi r16, 0xF8
+0002bb 3508                      	  cpi r16, MR_DATA_NOACK//MR_DATA_NOACK
+0002bc f439                      	  brne ERROR3
+                                       
+                                      
+                                       //data_lsb = TWDR; //read data byte
+0002bd 9100 00bb                       lds r16,TWDR
+0002bf 2f50                      	  mov DATA,r16
+                                 
+                                       
+                                       //TWCR = (1<<TWINT)|(1<<TWEN)|
+                                       //(1<<TWSTO); // Send a Stop Condition
+0002c0 e904                            ldi r16, (1<<TWINT)|(1<<TWEN)|(1<<TWSTO)
+0002c1 9300 00bc                 	  sts TWCR, r16
+                                 
+                                 	  
+                                       //return data;
+                                 
+0002c3 9508                      ret
+                                 
+                                 ERROR3:
+                                 ;rcall LCD
+0002c4 9508                      ret
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 LCD:
+0002c5 e104                      	ldi r16, 20
+0002c6 de8b                      	rcall	WaitMiliseconds
+                                 
+                                    //-----------------START OF LCD init-----------------
+0002c7 e02c                      ldi r18, 0b00001100 //format RS:E:D7:D6:D5:D4:N/A:N/A Control Sequence 8-bit interface
+0002c8 d091                      rcall DAC
+0002c9 e104                      	ldi r16, 20
+0002ca de87                      	rcall	WaitMiliseconds
+0002cb e42c                      ldi r18, 0b01001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002cc d08d                      rcall DAC
+0002cd e104                      	ldi r16, 20
+0002ce de83                      	rcall	WaitMiliseconds
+0002cf e02c                      ldi r18, 0b00001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002d0 d089                      rcall DAC
+0002d1 e104                      	ldi r16, 20
+0002d2 de7f                      	rcall	WaitMiliseconds
+0002d3 e02c                      	ldi r18, 0b00001100 //format RS:E:D7:D6:D5:D4:N/A:N/A 
+0002d4 d085                      rcall DAC
+0002d5 e104                      	ldi r16, 20
+0002d6 de7b                      	rcall	WaitMiliseconds
+0002d7 e42c                      ldi r18, 0b01001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002d8 d081                      rcall DAC
+0002d9 e104                      	ldi r16, 20
+0002da de77                      	rcall	WaitMiliseconds
+0002db e02c                      ldi r18, 0b00001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002dc d07d                      rcall DAC
+0002dd e104                      	ldi r16, 20
+0002de de73                      	rcall	WaitMiliseconds
+                                 
+0002df e02c                      ldi r18, 0b00001100 //format RS:E:D7:D6:D5:D4:N/A:N/A Control Sequence 8-bit interface
+0002e0 d079                      rcall DAC
+0002e1 e104                      	ldi r16, 20
+0002e2 de6f                      	rcall	WaitMiliseconds
+0002e3 e42c                      ldi r18, 0b01001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002e4 d075                      rcall DAC
+0002e5 e104                      	ldi r16, 20
+0002e6 de6b                      	rcall	WaitMiliseconds
+0002e7 e02c                      ldi r18, 0b00001100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002e8 d071                      rcall DAC
+0002e9 e104                      	ldi r16, 20
+0002ea de67                      	rcall	WaitMiliseconds
+0002eb e028                      ldi r18, 0b00001000 //format RS:E:D7:D6:D5:D4:N/A:N/A 
+0002ec d06d                      rcall DAC
+0002ed e104                      	ldi r16, 20
+0002ee de63                      	rcall	WaitMiliseconds
+0002ef e428                      ldi r18, 0b01001000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002f0 d069                      rcall DAC
+0002f1 e104                      	ldi r16, 20
+0002f2 de5f                      	rcall	WaitMiliseconds
+0002f3 e028                      ldi r18, 0b00001000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002f4 d065                      rcall DAC
+0002f5 e104                      	ldi r16, 20
+0002f6 de5b                      	rcall	WaitMiliseconds
+                                 
+0002f7 e028                      ldi r18, 0b00001000 //format RS:E:D7:D6:D5:D4:N/A:N/A 4-bit Mode
+0002f8 d061                      rcall DAC
+0002f9 e104                      	ldi r16, 20
+0002fa de57                      	rcall	WaitMiliseconds
+0002fb e428                      ldi r18, 0b01001000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+0002fc d05d                      rcall DAC
+0002fd e104                      	ldi r16, 20
+0002fe de53                      	rcall	WaitMiliseconds
+0002ff e028                      ldi r18, 0b00001000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000300 d059                      rcall DAC
+000301 e104                      	ldi r16, 20
+000302 de4f                      	rcall	WaitMiliseconds
+000303 e220                      ldi r18, 0b00100000 //format RS:E:D7:D6:D5:D4:N/A:N/A Function set: N:1 2 line, F:0 5x8
+000304 d055                      rcall DAC
+000305 e104                      	ldi r16, 20
+000306 de4b                      	rcall	WaitMiliseconds
+000307 e620                      ldi r18, 0b01100000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000308 d051                      rcall DAC
+000309 e104                      	ldi r16, 20
+00030a de47                      	rcall	WaitMiliseconds
+00030b e220                      ldi r18, 0b00100000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00030c d04d                      rcall DAC
+00030d e104                      	ldi r16, 20
+00030e de43                      	rcall	WaitMiliseconds
+                                 
+00030f e020                      ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A Display ON/OFF control
+000310 d049                      rcall DAC
+000311 e104                      	ldi r16, 20
+000312 de3f                      	rcall	WaitMiliseconds
+000313 e420                      ldi r18, 0b01000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000314 d045                      rcall DAC
+000315 e104                      	ldi r16, 20
+000316 de3b                      	rcall	WaitMiliseconds
+000317 e020                      ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000318 d041                      rcall DAC
+000319 e104                      	ldi r16, 20
+00031a de37                      	rcall	WaitMiliseconds
+00031b e32c                      ldi r18, 0b00111100 //format RS:E:D7:D6:D5:D4:N/A:N/A D display on, C cursor on, B blinking on
+00031c d03d                      rcall DAC
+00031d e104                      	ldi r16, 20
+00031e de33                      	rcall	WaitMiliseconds
+00031f e72c                      ldi r18, 0b01111100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000320 d039                      rcall DAC
+000321 e104                      	ldi r16, 20
+000322 de2f                      	rcall	WaitMiliseconds
+000323 e32c                      ldi r18, 0b00111100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000324 d035                      rcall DAC
+000325 e104                      	ldi r16, 20
+000326 de2b                      	rcall	WaitMiliseconds
+                                 
+000327 e020                      ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A Entry Mode
+000328 d031                      rcall DAC
+000329 e104                      	ldi r16, 20
+00032a de27                      	rcall	WaitMiliseconds
+00032b e420                      ldi r18, 0b01000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00032c d02d                      rcall DAC
+00032d e104                      	ldi r16, 20
+00032e de23                      	rcall	WaitMiliseconds
+00032f e020                      ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000330 d029                      rcall DAC
+000331 e104                      	ldi r16, 20
+000332 de1f                      	rcall	WaitMiliseconds
+000333 e128                      ldi r18, 0b00011000 //format RS:E:D7:D6:D5:D4:N/A:N/A I/D increament, S no display shift
+000334 d025                      rcall DAC
+000335 e104                      	ldi r16, 20
+000336 de1b                      	rcall	WaitMiliseconds
+000337 e528                      ldi r18, 0b01011000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000338 d021                      rcall DAC
+000339 e104                      	ldi r16, 20
+00033a de17                      	rcall	WaitMiliseconds
+00033b e128                      ldi r18, 0b00011000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+00033c d01d                      rcall DAC
+00033d e104                      	ldi r16, 20
+00033e de13                      	rcall	WaitMiliseconds
+                                 
+00033f e020                      ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A Clear Display
+000340 d019                      rcall DAC
+000341 e104                      	ldi r16, 20
+000342 de0f                      	rcall	WaitMiliseconds
+000343 e420                      ldi r18, 0b01000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000344 d015                      rcall DAC
+000345 e104                      	ldi r16, 20
+000346 de0b                      	rcall	WaitMiliseconds
+000347 e020                      ldi r18, 0b00000000 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000348 d011                      rcall DAC
+000349 e104                      	ldi r16, 20
+00034a de07                      	rcall	WaitMiliseconds
+00034b e024                      ldi r18, 0b00000100 //format RS:E:D7:D6:D5:D4:N/A:N/A 
+00034c d00d                      rcall DAC
+00034d e104                      	ldi r16, 20
+00034e de03                      	rcall	WaitMiliseconds
+00034f e424                      ldi r18, 0b01000100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000350 d009                      rcall DAC
+000351 e104                      	ldi r16, 20
+000352 ddff                      	rcall	WaitMiliseconds
+000353 e024                      ldi r18, 0b00000100 //format RS:E:D7:D6:D5:D4:N/A:N/A
+000354 d005                      rcall DAC
+000355 e104                      	ldi r16, 20
+000356 ddfb                      	rcall	WaitMiliseconds
+                                 //-----------------END OF LCD init-----------------
+                                 
+000357 e104                      	ldi r16, 20
+000358 ddf9                      	rcall	WaitMiliseconds
+000359 9508                      ret
+                                 
+                                 
+                                 
+                                 DAC:
+                                 
+                                  //---------------------1-wire init Vcc powered device Overdrive Mode---------------
+00035a d063                      	rcall OWReset
+00035b e30c                      	ldi r16, 0x3C     //Overdrive skip ROM
+00035c d07e                      	rcall OWWriteByte
+00035d ec0c                      	ldi r16, 0xCC     //Write Conditional Search Register command
+00035e d03b                      	rcall OWWriteByteOD
+00035f e80d                      	ldi r16, 0x8D     //TA1 beginning adress
+000360 d039                      	rcall OWWriteByteOD
+000361 e000                      	ldi r16, 0x00     //TA2 adress 008Dh
+000362 d037                      	rcall OWWriteByteOD
+000363 e801                      	ldi r16, 0x81     //data byte adress 008Dh
+000364 d035                      	rcall OWWriteByteOD
+                                 	//---------------------1-wire init Vcc powered device Overdrive Mode---------------
+                                 
+000365 d017                      	rcall OWResetOD
+000366 e30c                      	ldi r16, 0x3C     //Overdrive skip ROM
+000367 d032                      	rcall OWWriteByteOD
+000368 ef00                      	ldi r16, 0xF0     //Read PIO Registers command
+000369 d030                      	rcall OWWriteByteOD
+00036a e80d                      	ldi r16, 0x8D     //TA1 beginning adress
+00036b d02e                      	rcall OWWriteByteOD
+00036c e000                      	ldi r16, 0x00     //TA2 adress 008Dh
+00036d d02c                      	rcall OWWriteByteOD
+00036e d046                      	rcall OWReadByteOD //Read Control/Status Register and verify
+                                 
+00036f d00d                      	rcall OWResetOD
+000370 e30c                      	ldi r16, 0x3C     //Overdrive skip ROM
+000371 d028                      	rcall OWWriteByteOD
+000372 e50a                      	ldi r16, 0x5A     //Channel-access Write command
+000373 d026                      	rcall OWWriteByteOD
+000374 2f02                      	mov r16, r18     //Write byte to PIO
+000375 d024                      	rcall OWWriteByteOD
+000376 2f02                      	mov r16, r18     //
+000377 9500                      	com r16           //
+                                 	//ldi r16, 0xFF     //Write inverted byte to PIO
+000378 d021                      	rcall OWWriteByteOD
+000379 d03b                      	rcall OWReadByteOD //Read for verification (AAh = success)
+00037a d03a                      	rcall OWReadByteOD //Read PIO pin status
+00037b d001                      	rcall OWResetOD
+                                 	
+00037c 9508                      ret
+                                 
+                                 
+                                 
+                                 ;-------------------Overdrive Mode Start---------------------------------------
+                                 ;------------------------------------------------------------------------------
+                                 
+                                 ;------------------------------------------------------------------------------
+                                 ; Output : T - presence bit
+                                 ;------------------------------------------------------------------------------
+                                 OWResetOD:
+00037d 985c                      	cbi		OW_PORT,OW_DQ
+00037e 9a54                      	sbi		OW_DDR,OW_DQ
+                                 
+00037f e0b1                      	ldi		XH, HIGH(DVUS(55))
+000380 e1a3                      	ldi		XL, LOW(DVUS(55))
+000381 ddcd                      	rcall	Wait4xCycles
+                                 	
+000382 9854                      	cbi		OW_DDR,OW_DQ
+                                 
+000383 e0b0                      	ldi		XH, HIGH(DVUS(8))
+000384 e2a8                      	ldi		XL, LOW(DVUS(8))
+000385 ddc9                      	rcall	Wait4xCycles
+                                 
+000386 9468                      	set
+000387 9b4c                      	sbis	OW_PIN,OW_DQ
+000388 94e8                      	clt
+                                 
+000389 e0b0                      	ldi		XH, HIGH(DVUS(48))
+00038a efa0                      	ldi		XL, LOW(DVUS(48))
+00038b ddc3                      	rcall	Wait4xCycles
+                                 
+00038c 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Input : C - bit to write
+                                 ;------------------------------------------------------------------------------
+                                 OWWriteBitOD:
+00038d f418                      	brcc	OWWriteZeroOD
+00038e e0b0                      	ldi		XH, HIGH(DVUS(1))//Måste Kalibreras
+00038f e0a5                      	ldi		XL, LOW(DVUS(1))//Måste Kalibreras
+000390 c002                      	rjmp	OWWriteOneOD
+                                 OWWriteZeroOD:	
+000391 e0b0                      	ldi		XH, HIGH(DVUS(10)) 
+000392 e3a2                      	ldi		XL, LOW(DVUS(10)) 
+                                 OWWriteOneOD:
+000393 9a54                      	sbi		OW_DDR, OW_DQ
+000394 ddba                      	rcall	Wait4xCycles
+000395 9854                      	cbi		OW_DDR, OW_DQ
+                                 	
+000396 e0b0                      	ldi		XH, HIGH(DVUS(10))
+000397 e3a2                      	ldi		XL, LOW(DVUS(10))
+000398 ddb6                      	rcall	Wait4xCycles
+000399 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Input : r16 - byte to write
+                                 ;------------------------------------------------------------------------------
+                                 OWWriteByteOD:
+00039a 931f                      	push	OWCount
+00039b e010                      	ldi		OWCount,0
+                                 OWWriteLoopOD:	
+00039c 9507                      	ror		r16
+00039d dfef                      	rcall	OWWriteBitOD	
+00039e 9513                      	inc		OWCount
+00039f 3018                      	cpi		OWCount,8
+0003a0 f7d9                      	brne	OWWriteLoopOD
+0003a1 911f                      	pop		OWCount		
+0003a2 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Output : C - bit from slave
+                                 ;------------------------------------------------------------------------------
+                                 OWReadBitOD:
+0003a3 e0b0                      	ldi		XH, HIGH(DVUS(1)) //Måste kalibreras
+0003a4 e0a5                      	ldi		XL, LOW(DVUS(1)) //Måste kalibreras
+0003a5 9a54                      	sbi		OW_DDR, OW_DQ
+0003a6 dda8                      	rcall	Wait4xCycles
+0003a7 9854                      	cbi		OW_DDR, OW_DQ
+0003a8 e0b0                      	ldi		XH, HIGH(DVUS(1)) //1.5 kohm optimal pull-up. Kalibrera så att sampling inte sker försent, 1us-2us tRD - READ VALID, pga oexakta tider, oscilloskop!
+0003a9 e0a5                      	ldi		XL, LOW(DVUS(1)) //1.5 kohm optimal pull-up. Kalibrera så att sampling inte sker försent,  1us-2us tRD - READ VALID, pga oexakta tider, oscilloskop!
+0003aa dda4                      	rcall	Wait4xCycles
+0003ab 94e8                      	clt
+0003ac 994c                      	sbic	OW_PIN,OW_DQ
+0003ad 9468                      	set
+0003ae e0b0                      	ldi		XH, HIGH(DVUS(10))
+0003af e3a2                      	ldi		XL, LOW(DVUS(10))
+0003b0 dd9e                      	rcall	Wait4xCycles
+0003b1 9408                      	sec
+0003b2 f00e                      	brts	OWReadBitEndOD
+0003b3 9488                      	clc
+                                 OWReadBitEndOD:
+0003b4 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Output : r16 - byte from slave
+                                 ;------------------------------------------------------------------------------
+                                 OWReadByteOD:
+0003b5 931f                      	push	OWCount
+0003b6 e010                      	ldi		OWCount,0
+                                 OWReadLoopOD:
+0003b7 dfeb                      	rcall	OWReadBitOD
+0003b8 9507                      	ror		r16
+0003b9 9513                      	inc		OWCount
+0003ba 3018                      	cpi		OWCount,8
+0003bb f7d9                      	brne	OWReadLoopOD
+0003bc 911f                      	pop		OWCount
+0003bd 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ;
+                                 ;------------------------------------------------------------------------------
+                                 
+                                 ;-------------------Overdrive Mode End-----------------------------------------
+                                 ;------------------------------------------------------------------------------
+                                 
+                                 
+                                 
+                                 ;-------------------Standard Mode Start-----------------------------------------
+                                 ;------------------------------------------------------------------------------
+                                 
+                                 ;------------------------------------------------------------------------------
+                                 ; Output : T - presence bit
+                                 ;------------------------------------------------------------------------------
+                                 OWReset:
+0003be 985c                      	cbi		OW_PORT,OW_DQ
+0003bf 9a54                      	sbi		OW_DDR,OW_DQ
+                                 
+0003c0 e0b9                      	ldi		XH, HIGH(DVUS(470))
+0003c1 e2ae                      	ldi		XL, LOW(DVUS(470))
+0003c2 dd8c                      	rcall	Wait4xCycles
+                                 	
+0003c3 9854                      	cbi		OW_DDR,OW_DQ
+                                 
+0003c4 e0b1                      	ldi		XH, HIGH(DVUS(70))
+0003c5 e5ae                      	ldi		XL, LOW(DVUS(70))
+0003c6 dd88                      	rcall	Wait4xCycles
+                                 
+0003c7 9468                      	set
+0003c8 9b4c                      	sbis	OW_PIN,OW_DQ
+0003c9 94e8                      	clt
+                                 
+0003ca e0b4                      	ldi		XH, HIGH(DVUS(240))
+0003cb eba0                      	ldi		XL, LOW(DVUS(240))
+0003cc dd82                      	rcall	Wait4xCycles
+                                 
+0003cd 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Input : C - bit to write
+                                 ;------------------------------------------------------------------------------
+                                 OWWriteBit:
+0003ce f418                      	brcc	OWWriteZero
+0003cf e0b0                      	ldi		XH, HIGH(DVUS(1))
+0003d0 e0a5                      	ldi		XL, LOW(DVUS(1))
+0003d1 c002                      	rjmp	OWWriteOne
+                                 OWWriteZero:	
+0003d2 e0b1                      	ldi		XH, HIGH(DVUS(70)) //Changed from 120
+0003d3 e5ae                      	ldi		XL, LOW(DVUS(70)) //Changed from 120
+                                 OWWriteOne:
+0003d4 9a54                      	sbi		OW_DDR, OW_DQ
+0003d5 dd79                      	rcall	Wait4xCycles
+0003d6 9854                      	cbi		OW_DDR, OW_DQ
+                                 	
+0003d7 e0b1                      	ldi		XH, HIGH(DVUS(60))
+0003d8 e2ac                      	ldi		XL, LOW(DVUS(60))
+0003d9 dd75                      	rcall	Wait4xCycles
+0003da 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Input : r16 - byte to write
+                                 ;------------------------------------------------------------------------------
+                                 OWWriteByte:
+0003db 931f                      	push	OWCount
+0003dc e010                      	ldi		OWCount,0
+                                 OWWriteLoop:	
+0003dd 9507                      	ror		r16
+0003de dfef                      	rcall	OWWriteBit	
+0003df 9513                      	inc		OWCount
+0003e0 3018                      	cpi		OWCount,8
+0003e1 f7d9                      	brne	OWWriteLoop
+0003e2 911f                      	pop		OWCount		
+0003e3 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Output : C - bit from slave
+                                 ;------------------------------------------------------------------------------
+                                 OWReadBit:
+0003e4 e0b0                      	ldi		XH, HIGH(DVUS(1))
+0003e5 e0a5                      	ldi		XL, LOW(DVUS(1))
+0003e6 9a54                      	sbi		OW_DDR, OW_DQ
+0003e7 dd67                      	rcall	Wait4xCycles
+0003e8 9854                      	cbi		OW_DDR, OW_DQ
+0003e9 e0b0                      	ldi		XH, HIGH(DVUS(8)) //Kolla så att sampling inte sker försent, max 15us tRD - READ VALID, pga oexakta tider, oscilloskop!
+0003ea e2a8                      	ldi		XL, LOW(DVUS(8)) //Kolla så att sampling inte sker försent, max 15us tRD - READ VALID, pga oexakta tider, oscilloskop!
+0003eb dd63                      	rcall	Wait4xCycles
+0003ec 94e8                      	clt
+0003ed 994c                      	sbic	OW_PIN,OW_DQ
+0003ee 9468                      	set
+0003ef e0b0                      	ldi		XH, HIGH(DVUS(50))
+0003f0 efaa                      	ldi		XL, LOW(DVUS(50))
+0003f1 dd5d                      	rcall	Wait4xCycles
+0003f2 9408                      	sec
+0003f3 f00e                      	brts	OWReadBitEnd
+0003f4 9488                      	clc
+                                 OWReadBitEnd:
+0003f5 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ; Output : r16 - byte from slave
+                                 ;------------------------------------------------------------------------------
+                                 OWReadByte:
+0003f6 931f                      	push	OWCount
+0003f7 e010                      	ldi		OWCount,0
+                                 OWReadLoop:
+0003f8 dfeb                      	rcall	OWReadBit
+0003f9 9507                      	ror		r16
+0003fa 9513                      	inc		OWCount
+0003fb 3018                      	cpi		OWCount,8
+0003fc f7d9                      	brne	OWReadLoop
+0003fd 911f                      	pop		OWCount
+0003fe 9508                      	ret
+                                 ;------------------------------------------------------------------------------
+                                 ;
+                                 ;------------------------------------------------------------------------------
+                                 
+                                 ;-------------------Standard Mode End------------------------------------------
+                                 ;------------------------------------------------------------------------------
+                                 
+
+
+RESOURCE USE INFORMATION
+------------------------
+
+Notice:
+The register and instruction counts are symbol table hit counts,
+and hence implicitly used resources are not counted, eg, the
+'lpm' instruction without operands implicitly uses r0 and z,
+none of which are counted.
+
+x,y,z are separate entities in the symbol table and are
+counted separately from r26..r31 here.
+
+.dseg memory usage only counts static data declared with .byte
+
+"ATmega328P" register use summary:
+x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
+r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
+r13:   0 r14:   0 r15:   0 r16: 283 r17:  20 r18:  80 r19:  51 r20:  51 
+r21:  60 r22:   0 r23:   0 r24:   0 r25:   0 r26:  21 r27:  21 r28:   0 
+r29:   0 r30:   0 r31:   0 
+Registers used: 8 out of 35 (22.9%)
+
+"ATmega328P" instruction use summary:
+.lds  :   0 .sts  :   0 adc   :   0 add   :   0 adiw  :   0 and   :   0 
+andi  :  13 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+brcc  :   2 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
+brne  :  18 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   2 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   8 cbr   :   0 
+clc   :   2 clh   :   0 cli   :   0 cln   :   0 clr   :   1 cls   :   0 
+clt   :   4 clv   :   0 clz   :   0 com   :   1 cp    :   0 cpc   :   0 
+cpi   :  16 cpse  :   0 dec   :   1 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   4 jmp   :   0 
+ld    :   0 ldd   :   0 ldi   : 439 lds   :  25 lpm   :   0 lsl   :   0 
+lsr   :   2 mov   :  12 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   0 or    :   3 ori   :   0 out   :   0 pop   :   5 
+push  :   5 rcall : 312 ret   :  21 reti  :   0 rjmp  :  16 rol   :   0 
+ror   :   4 sbc   :   0 sbci  :   0 sbi   :   6 sbic  :   2 sbis  :   2 
+sbiw  :   1 sbr   :   0 sbrc  :   0 sbrs  :  13 sec   :   2 seh   :   0 
+sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   4 sev   :   0 
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  26 
+sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 31 out of 113 (27.4%)
+
+"ATmega328P" memory use summary [bytes]:
+Segment   Begin    End      Code   Data   Used    Size   Use%
+---------------------------------------------------------------
+[.cseg] 0x000000 0x0007fe   2046      0   2046   32768   6.2%
+[.dseg] 0x000100 0x000104      0      4      4    2048   0.2%
+[.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
+
+Assembly complete, 0 errors, 0 warnings

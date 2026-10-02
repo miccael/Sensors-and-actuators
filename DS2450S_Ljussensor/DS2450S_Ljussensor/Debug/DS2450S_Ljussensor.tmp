@@ -1,0 +1,41 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.52</VERSION>
+ <DEVICE>"ATtiny45"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1117\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1117\avrassembler\Include\tn45def.inc</FILE>
+  <FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\Debug/DS2450S_Ljussensor.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DS2450S_Ljussensor.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DS2450S_Ljussensor.map</FILE>
+  <FILE>DS2450S_Ljussensor.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Main><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>18</LINE></Main>
+  <OWReset><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>165</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>211</LINE></OWWriteByte>
+  <OWReadByte><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>248</LINE></OWReadByte>
+  <WaitMiliseconds><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\wait.asm</FILE><LINE>36</LINE></WaitMiliseconds>
+  <SPITransfer_Fast><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>264</LINE></SPITransfer_Fast>
+  <Wait4xCycles><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\wait.asm</FILE><LINE>29</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\wait.asm</FILE><LINE>38</LINE></WaitMsLoop>
+  <OWWriteBit><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>191</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>196</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>199</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>214</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>225</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>243</LINE></OWReadBitEnd>
+  <OWReadLoop><FILE>C:\Users\Mikael\Desktop\ATmega_Arduino_PROJEKT\DS2450S_Ljussensor\DS2450S_Ljussensor\DS2450S_Ljussensor.asm</FILE><LINE>251</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

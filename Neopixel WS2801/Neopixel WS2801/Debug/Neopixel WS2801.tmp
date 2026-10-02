@@ -1,0 +1,58 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega88"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m88def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Debug\Neopixel WS2801.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Neopixel WS2801.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Neopixel WS2801.map</FILE>
+  <FILE>Neopixel WS2801.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Startup><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>32</LINE></Startup>
+  <Wait_Transmit0><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>36</LINE></Wait_Transmit0>
+  <Wait_Transmit1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>45</LINE></Wait_Transmit1>
+  <Wait_Transmit2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>53</LINE></Wait_Transmit2>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <start><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>72</LINE></start>
+  <DS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>192</LINE></DS18B20>
+  <sendred><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>89</LINE></sendred>
+  <sendgreen><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>117</LINE></sendgreen>
+  <sendblue><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>145</LINE></sendblue>
+  <Wait_Transmit3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>92</LINE></Wait_Transmit3>
+  <Wait_Transmit4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>101</LINE></Wait_Transmit4>
+  <Wait_Transmit5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>109</LINE></Wait_Transmit5>
+  <Wait_Transmit6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>120</LINE></Wait_Transmit6>
+  <Wait_Transmit7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>129</LINE></Wait_Transmit7>
+  <Wait_Transmit8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>137</LINE></Wait_Transmit8>
+  <Wait_Transmit9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>148</LINE></Wait_Transmit9>
+  <Wait_Transmit10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>157</LINE></Wait_Transmit10>
+  <Wait_Transmit11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>165</LINE></Wait_Transmit11>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <OWResetDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>230</LINE></OWResetDS18B20>
+  <OWWriteByteDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>276</LINE></OWWriteByteDS18B20>
+  <OWReadByteDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>313</LINE></OWReadByteDS18B20>
+  <OWWriteBitDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>256</LINE></OWWriteBitDS18B20>
+  <OWWriteZeroDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>261</LINE></OWWriteZeroDS18B20>
+  <OWWriteOneDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>264</LINE></OWWriteOneDS18B20>
+  <OWWriteLoopDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>279</LINE></OWWriteLoopDS18B20>
+  <OWReadBitDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>290</LINE></OWReadBitDS18B20>
+  <OWReadBitEndDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>308</LINE></OWReadBitEndDS18B20>
+  <OWReadLoopDS18B20><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\Neopixel WS2801\Neopixel WS2801\Neopixel WS2801.asm</FILE><LINE>316</LINE></OWReadLoopDS18B20>
+ </LABELS>
+</ASSEMBLER_INFO>

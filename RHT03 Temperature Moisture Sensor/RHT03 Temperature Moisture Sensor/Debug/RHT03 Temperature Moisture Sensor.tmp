@@ -1,0 +1,71 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\Debug\RHT03 Temperature Moisture Sensor.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>RHT03 Temperature Moisture Sensor.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>RHT03 Temperature Moisture Sensor.map</FILE>
+  <FILE>RHT03 Temperature Moisture Sensor.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RHT03BYTE1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>12</LINE></RHT03BYTE1>
+  <RHT03BYTE2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>13</LINE></RHT03BYTE2>
+  <RHT03BYTE3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>14</LINE></RHT03BYTE3>
+  <RHT03BYTE4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>15</LINE></RHT03BYTE4>
+  <RHT03BYTE5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>16</LINE></RHT03BYTE5>
+  <reset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>70</LINE></reset>
+  <EXT_INT1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>183</LINE></EXT_INT1>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>482</LINE></LCD>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>134</LINE></main>
+  <RHT03><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>169</LINE></RHT03>
+  <count><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>149</LINE></count>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>250</LINE></LCDwrite>
+  <RHT03ReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>197</LINE></RHT03ReadBit>
+  <RHT03ReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>204</LINE></RHT03ReadBitEnd>
+  <Store0><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>207</LINE></Store0>
+  <Store1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>212</LINE></Store1>
+  <Store2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>217</LINE></Store2>
+  <Store3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>222</LINE></Store3>
+  <Store4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>227</LINE></Store4>
+  <Store5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>243</LINE></Store5>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>644</LINE></DAC>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>805</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>851</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>742</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>696</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>779</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>722</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>727</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>730</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>745</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>756</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>774</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>782</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>831</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>836</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>839</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>854</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>865</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>883</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>888</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\RHT03 Temperature Moisture Sensor\RHT03 Temperature Moisture Sensor\RHT03.asm</FILE><LINE>891</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

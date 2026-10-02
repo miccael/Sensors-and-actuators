@@ -1,0 +1,80 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega328"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m328def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\Debug\SRF02.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>SRF02.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>SRF02.map</FILE>
+  <FILE>SRF02.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>633</LINE></LCD>
+  <OWResetWS2811><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1134</LINE></OWResetWS2811>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <WS2811><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1071</LINE></WS2811>
+  <Main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>81</LINE></Main>
+  <SRF02Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>342</LINE></SRF02Write>
+  <SRF02Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>461</LINE></SRF02Read>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>229</LINE></LCDwrite>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1150</LINE></DAC>
+  <signal1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>293</LINE></signal1>
+  <signal2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>308</LINE></signal2>
+  <signal3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>323</LINE></signal3>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>338</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>352</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>376</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>405</LINE></wait3>
+  <wait4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>433</LINE></wait4>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>457</LINE></ERROR2>
+  <wait5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>473</LINE></wait5>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>499</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>525</LINE></wait7>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>629</LINE></ERROR3>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>550</LINE></wait8>
+  <wait9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>575</LINE></wait9>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>599</LINE></wait10>
+  <OWWriteByteWS2811><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1077</LINE></OWWriteByteWS2811>
+  <OWWriteLoopWS2811><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1080</LINE></OWWriteLoopWS2811>
+  <OWWriteBitWS2811><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1093</LINE></OWWriteBitWS2811>
+  <OWWriteZeroWS2811><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1096</LINE></OWWriteZeroWS2811>
+  <OWWriteOneWS2811><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1109</LINE></OWWriteOneWS2811>
+  <OWWriteBitWS2811END><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1131</LINE></OWWriteBitWS2811END>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1312</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1358</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1248</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1202</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1285</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1228</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1233</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1236</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1251</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1262</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1280</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1288</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1338</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1343</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1346</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1361</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1372</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1390</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1395</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SRF02\SRF02\SRF02.asm</FILE><LINE>1398</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

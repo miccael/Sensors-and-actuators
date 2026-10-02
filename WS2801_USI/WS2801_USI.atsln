@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "WS2801_USI", "WS2801_USI\WS2801_USI.cproj", "{447FBBFF-7A2F-4EDD-9C37-48162AC6B1F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{447FBBFF-7A2F-4EDD-9C37-48162AC6B1F1}.Debug|AVR.ActiveCfg = Debug|AVR
+		{447FBBFF-7A2F-4EDD-9C37-48162AC6B1F1}.Debug|AVR.Build.0 = Debug|AVR
+		{447FBBFF-7A2F-4EDD-9C37-48162AC6B1F1}.Release|AVR.ActiveCfg = Release|AVR
+		{447FBBFF-7A2F-4EDD-9C37-48162AC6B1F1}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

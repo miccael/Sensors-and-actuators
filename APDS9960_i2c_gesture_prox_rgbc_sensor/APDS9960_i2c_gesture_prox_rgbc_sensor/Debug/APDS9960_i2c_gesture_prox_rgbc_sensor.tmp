@@ -1,0 +1,71 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\Debug\APDS9960_i2c_gesture_prox_rgbc_sensor.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>APDS9960_i2c_gesture_prox_rgbc_sensor.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>APDS9960_i2c_gesture_prox_rgbc_sensor.map</FILE>
+  <FILE>APDS9960_i2c_gesture_prox_rgbc_sensor.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <DUMMY_PAGE_1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>13</LINE></DUMMY_PAGE_1>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <MAX30105_settings><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>96</LINE></MAX30105_settings>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>802</LINE></LCD>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>76</LINE></main>
+  <MAX30105Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>621</LINE></MAX30105Read>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>143</LINE></LCDwrite>
+  <MAX30105Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>501</LINE></MAX30105Write>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>964</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>496</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>511</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>535</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>564</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>616</LINE></ERROR2>
+  <wait5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>592</LINE></wait5>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>633</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>659</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>685</LINE></wait8>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>710</LINE></wait10>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>794</LINE></ERROR3>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>738</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>764</LINE></wait12>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1125</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1171</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1062</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1016</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1099</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1042</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1047</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1050</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1065</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1076</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1094</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1102</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1151</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1156</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1159</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1174</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1185</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1203</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1208</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\APDS9960_i2c_gesture_prox_rgbc_sensor\APDS9960_i2c_gesture_prox_rgbc_sensor\main.asm</FILE><LINE>1211</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

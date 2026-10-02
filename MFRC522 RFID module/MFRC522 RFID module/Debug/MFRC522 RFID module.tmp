@@ -1,0 +1,68 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\Debug\MFRC522 RFID module.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>MFRC522 RFID module.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>MFRC522 RFID module.map</FILE>
+  <FILE>MFRC522 RFID module.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <DUMMY_PAGE_1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>24</LINE></DUMMY_PAGE_1>
+  <SERIAL0><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>25</LINE></SERIAL0>
+  <SERIAL1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>26</LINE></SERIAL1>
+  <SERIAL2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>27</LINE></SERIAL2>
+  <SERIAL3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>28</LINE></SERIAL3>
+  <CHECKBYTE4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>29</LINE></CHECKBYTE4>
+  <CRC_H><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>30</LINE></CRC_H>
+  <CRC_L><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>31</LINE></CRC_L>
+  <MFRC522_settings><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>607</LINE></MFRC522_settings>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1291</LINE></LCD>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>150</LINE></main>
+  <MFRC522Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1181</LINE></MFRC522Write>
+  <MFRC522Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1212</LINE></MFRC522Read>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>825</LINE></LCDwrite>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1453</LINE></DAC>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1191</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1201</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1224</LINE></wait3>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1614</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1660</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1551</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1505</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1588</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1531</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1536</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1539</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1554</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1565</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1583</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1591</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1640</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1645</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1648</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1663</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1674</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1692</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1697</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MFRC522 RFID module\MFRC522 RFID module\MFRC522.asm</FILE><LINE>1700</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

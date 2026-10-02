@@ -1,0 +1,81 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\Debug\I2C RGB Color Sensor_TCS34725.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>I2C RGB Color Sensor_TCS34725.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>I2C RGB Color Sensor_TCS34725.map</FILE>
+  <FILE>I2C RGB Color Sensor_TCS34725.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <CDATAL><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>9</LINE></CDATAL>
+  <CDATAH><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>10</LINE></CDATAH>
+  <RDATAL><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>11</LINE></RDATAL>
+  <RDATAH><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>12</LINE></RDATAH>
+  <GDATAL><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>13</LINE></GDATAL>
+  <GDATAH><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>14</LINE></GDATAH>
+  <BDATAL><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>15</LINE></BDATAL>
+  <BDATAH><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>16</LINE></BDATAH>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>861</LINE></LCD>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>88</LINE></main>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <TCS34725Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>484</LINE></TCS34725Write>
+  <TCS34725Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>603</LINE></TCS34725Read>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>253</LINE></LCDwrite>
+  <APA102C><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>807</LINE></APA102C>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1023</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>479</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>494</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>518</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>547</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>598</LINE></ERROR2>
+  <wait4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>574</LINE></wait4>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>615</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>641</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>667</LINE></wait8>
+  <wait9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>692</LINE></wait9>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>803</LINE></ERROR3>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>717</LINE></wait10>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>742</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>773</LINE></wait12>
+  <SPI_MasterTransmit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>845</LINE></SPI_MasterTransmit>
+  <wait13><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>850</LINE></wait13>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1184</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1230</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1121</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1075</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1158</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1101</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1106</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1109</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1124</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1135</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1153</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1161</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1210</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1215</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1218</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1233</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1244</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1262</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1267</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\I2C RGB Color Sensor_TCS34725\I2C RGB Color Sensor_TCS34725\TCS34725.asm</FILE><LINE>1270</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

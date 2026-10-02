@@ -1,0 +1,65 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega328"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m328def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\Debug\DS2762 Thermocouple Interface.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DS2762 Thermocouple Interface.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DS2762 Thermocouple Interface.map</FILE>
+  <FILE>DS2762 Thermocouple Interface.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>69</LINE></LCD>
+  <Main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>20</LINE></Main>
+  <SENSOR_DS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>279</LINE></SENSOR_DS2762>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>314</LINE></LCDwrite>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>232</LINE></DAC>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>496</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>542</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>432</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>386</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>469</LINE></OWReadByteOD>
+  <OWResetDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>606</LINE></OWResetDS2762>
+  <OWWriteByteDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>652</LINE></OWWriteByteDS2762>
+  <OWReadByteDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>689</LINE></OWReadByteDS2762>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>412</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>417</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>420</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>435</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>446</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>464</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>472</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>522</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>527</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>530</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>545</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>556</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>574</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>579</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>582</LINE></OWReadLoop>
+  <OWWriteBitDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>632</LINE></OWWriteBitDS2762>
+  <OWWriteZeroDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>637</LINE></OWWriteZeroDS2762>
+  <OWWriteOneDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>640</LINE></OWWriteOneDS2762>
+  <OWWriteLoopDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>655</LINE></OWWriteLoopDS2762>
+  <OWReadBitDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>666</LINE></OWReadBitDS2762>
+  <OWReadBitEndDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>684</LINE></OWReadBitEndDS2762>
+  <OWReadLoopDS2762><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS2762 Thermocouple Interface\DS2762 Thermocouple Interface\DS2762.asm</FILE><LINE>692</LINE></OWReadLoopDS2762>
+ </LABELS>
+</ASSEMBLER_INFO>

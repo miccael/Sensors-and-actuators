@@ -1,0 +1,62 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega328"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m328def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\Debug\WS2812B.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>WS2812B.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>WS2812B.map</FILE>
+  <FILE>WS2812B.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>231</LINE></LCD>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>457</LINE></LCDwrite>
+  <Main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>22</LINE></Main>
+  <LED_WS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>441</LINE></LED_WS2812>
+  <OWResetWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>840</LINE></OWResetWS2812>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>394</LINE></DAC>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>730</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>776</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>666</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>620</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>703</LINE></OWReadByteOD>
+  <OWWriteByteWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>895</LINE></OWWriteByteWS2812>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>646</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>651</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>654</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>669</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>680</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>698</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>706</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>756</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>761</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>764</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>779</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>790</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>808</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>813</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>816</LINE></OWReadLoop>
+  <OWWriteBitWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>859</LINE></OWWriteBitWS2812>
+  <OWWriteZeroWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>862</LINE></OWWriteZeroWS2812>
+  <OWWriteOneWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>870</LINE></OWWriteOneWS2812>
+  <here><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>890</LINE></here>
+  <OWWriteLoopWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812B\WS2812B\WS2812B.asm</FILE><LINE>898</LINE></OWWriteLoopWS2812>
+ </LABELS>
+</ASSEMBLER_INFO>

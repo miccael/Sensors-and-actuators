@@ -1,0 +1,71 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\Debug\MAX30105_I2C_particle_sensor.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>MAX30105_I2C_particle_sensor.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>MAX30105_I2C_particle_sensor.map</FILE>
+  <FILE>MAX30105_I2C_particle_sensor.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <DUMMY_PAGE_1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>16</LINE></DUMMY_PAGE_1>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <MAX30105_settings><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>104</LINE></MAX30105_settings>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>937</LINE></LCD>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>79</LINE></main>
+  <MAX30105Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>719</LINE></MAX30105Read>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>241</LINE></LCDwrite>
+  <MAX30105Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>599</LINE></MAX30105Write>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1099</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>594</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>609</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>633</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>662</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>714</LINE></ERROR2>
+  <wait5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>690</LINE></wait5>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>731</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>757</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>783</LINE></wait8>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>808</LINE></wait10>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>929</LINE></ERROR3>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>836</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>899</LINE></wait12>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1260</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1306</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1197</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1151</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1234</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1177</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1182</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1185</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1200</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1211</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1229</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1237</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1286</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1291</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1294</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1309</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1320</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1338</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1343</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\MAX30105_I2C_particle_sensor\MAX30105_I2C_particle_sensor\MAX30105.asm</FILE><LINE>1346</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

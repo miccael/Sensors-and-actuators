@@ -1,0 +1,77 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\Debug\VL6180 TOF Range Sensor.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>VL6180 TOF Range Sensor.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>VL6180 TOF Range Sensor.map</FILE>
+  <FILE>VL6180 TOF Range Sensor.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <PAGE_START_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>12</LINE></PAGE_START_OLED>
+  <PAGE_END_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>13</LINE></PAGE_END_OLED>
+  <COLUMN_START_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>14</LINE></COLUMN_START_OLED>
+  <COLUMN_END_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>15</LINE></COLUMN_END_OLED>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <VL6180_settings><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>219</LINE></VL6180_settings>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1245</LINE></LCD>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>102</LINE></main>
+  <VL6180Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>845</LINE></VL6180Write>
+  <wait0_0><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>158</LINE></wait0_0>
+  <VL6180Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>991</LINE></VL6180Read>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>609</LINE></LCDwrite>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1407</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>840</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>855</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>879</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>908</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>986</LINE></ERROR2>
+  <wait4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>935</LINE></wait4>
+  <wait5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>962</LINE></wait5>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1003</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1029</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1055</LINE></wait8>
+  <wait9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1082</LINE></wait9>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1155</LINE></wait10>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1237</LINE></ERROR3>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1183</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1207</LINE></wait12>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1568</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1614</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1505</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1459</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1542</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1485</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1490</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1493</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1508</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1519</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1537</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1545</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1594</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1599</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1602</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1617</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1628</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1646</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1651</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\VL6180 TOF Range Sensor\VL6180 TOF Range Sensor\VL6180.asm</FILE><LINE>1654</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,62 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega328"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m328def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\Debug\WS2812_5mm_LED.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>WS2812_5mm_LED.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>WS2812_5mm_LED.map</FILE>
+  <FILE>WS2812_5mm_LED.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>144</LINE></LCD>
+  <Main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>25</LINE></Main>
+  <LED_WS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>354</LINE></LED_WS2812>
+  <OWResetWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>753</LINE></OWResetWS2812>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>370</LINE></LCDwrite>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>307</LINE></DAC>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>643</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>689</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>579</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>533</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>616</LINE></OWReadByteOD>
+  <OWWriteByteWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>825</LINE></OWWriteByteWS2812>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>559</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>564</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>567</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>582</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>593</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>611</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>619</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>669</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>674</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>677</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>692</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>703</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>721</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>726</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>729</LINE></OWReadLoop>
+  <OWWriteBitWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>772</LINE></OWWriteBitWS2812>
+  <OWWriteZeroWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>775</LINE></OWWriteZeroWS2812>
+  <OWWriteOneWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>793</LINE></OWWriteOneWS2812>
+  <here><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>820</LINE></here>
+  <OWWriteLoopWS2812><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\WS2812_5mm_LED\WS2812_5mm_LED\WS2812.asm</FILE><LINE>828</LINE></OWWriteLoopWS2812>
+ </LABELS>
+</ASSEMBLER_INFO>

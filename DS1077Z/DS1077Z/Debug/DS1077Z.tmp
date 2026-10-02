@@ -1,0 +1,76 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega328"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m328def.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\Debug\DS1077Z.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DS1077Z.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DS1077Z.map</FILE>
+  <FILE>DS1077Z.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>748</LINE></LCD>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <DS1077Z_BUS_Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>634</LINE></DS1077Z_BUS_Write>
+  <DS1077ZWrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>284</LINE></DS1077ZWrite>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>135</LINE></main>
+  <DS1077ZRead><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>433</LINE></DS1077ZRead>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>212</LINE></LCDwrite>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1188</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>279</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>294</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>318</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>347</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>429</LINE></ERROR2>
+  <wait4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>375</LINE></wait4>
+  <wait5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>404</LINE></wait5>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>445</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>471</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>497</LINE></wait8>
+  <wait9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>522</LINE></wait9>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>630</LINE></ERROR3>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>547</LINE></wait10>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>571</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>600</LINE></wait12>
+  <wait13><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>644</LINE></wait13>
+  <wait14><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>668</LINE></wait14>
+  <wait15><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>697</LINE></wait15>
+  <wait16><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>725</LINE></wait16>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1349</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1395</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1286</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1240</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1323</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1266</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1271</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1274</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1289</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1300</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1318</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1326</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1375</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1380</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1383</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1398</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1409</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1427</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1432</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1077Z\DS1077Z\DS1077Z.asm</FILE><LINE>1435</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

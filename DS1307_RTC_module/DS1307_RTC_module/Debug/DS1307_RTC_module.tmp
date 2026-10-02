@@ -1,0 +1,74 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\Debug\DS1307_RTC_module.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DS1307_RTC_module.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DS1307_RTC_module.map</FILE>
+  <FILE>DS1307_RTC_module.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <PAGE_START_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>11</LINE></PAGE_START_OLED>
+  <PAGE_END_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>12</LINE></PAGE_END_OLED>
+  <COLUMN_START_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>13</LINE></COLUMN_START_OLED>
+  <COLUMN_END_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>14</LINE></COLUMN_END_OLED>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <DS1307_settings><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>112</LINE></DS1307_settings>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>851</LINE></LCD>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>88</LINE></main>
+  <DS1307Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>625</LINE></DS1307Read>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>194</LINE></LCDwrite>
+  <DS1307Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>505</LINE></DS1307Write>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1013</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>500</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>515</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>539</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>568</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>620</LINE></ERROR2>
+  <wait5><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>596</LINE></wait5>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>637</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>663</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>689</LINE></wait8>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>761</LINE></wait10>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>843</LINE></ERROR3>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>789</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>813</LINE></wait12>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1174</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1220</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1111</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1065</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1148</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1091</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1096</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1099</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1114</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1125</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1143</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1151</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1200</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1205</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1208</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1223</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1234</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1252</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1257</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\DS1307_RTC_module\DS1307_RTC_module\DS1307.asm</FILE><LINE>1260</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

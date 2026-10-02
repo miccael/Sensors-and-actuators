@@ -1,0 +1,78 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\wait.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\Debug\SSD1306_128x64 Dot Matrix OLED.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>SSD1306_128x64 Dot Matrix OLED.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>SSD1306_128x64 Dot Matrix OLED.map</FILE>
+  <FILE>SSD1306_128x64 Dot Matrix OLED.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <PAGE_START_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>11</LINE></PAGE_START_OLED>
+  <PAGE_END_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>12</LINE></PAGE_END_OLED>
+  <COLUMN_START_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>13</LINE></COLUMN_START_OLED>
+  <COLUMN_END_OLED><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>14</LINE></COLUMN_END_OLED>
+  <LCD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1047</LINE></LCD>
+  <Set_Page_Address><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>457</LINE></Set_Page_Address>
+  <Set_Column_Address><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>397</LINE></Set_Column_Address>
+  <WaitMiliseconds><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\wait.asm</FILE><LINE>38</LINE></WaitMiliseconds>
+  <SSD1306Write><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>720</LINE></SSD1306Write>
+  <main><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>341</LINE></main>
+  <Increase_Page_Start_Address><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>374</LINE></Increase_Page_Start_Address>
+  <LCDwrite><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>527</LINE></LCDwrite>
+  <reset_Page_Pointer><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>392</LINE></reset_Page_Pointer>
+  <Wait4xCycles><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\wait.asm</FILE><LINE>31</LINE></Wait4xCycles>
+  <WaitMsLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\wait.asm</FILE><LINE>40</LINE></WaitMsLoop>
+  <DAC><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1209</LINE></DAC>
+  <ERROR1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>715</LINE></ERROR1>
+  <wait1><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>730</LINE></wait1>
+  <wait2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>754</LINE></wait2>
+  <wait3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>783</LINE></wait3>
+  <ERROR2><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>834</LINE></ERROR2>
+  <wait4><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>810</LINE></wait4>
+  <SSD1306Read><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>839</LINE></SSD1306Read>
+  <wait6><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>851</LINE></wait6>
+  <wait7><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>877</LINE></wait7>
+  <wait8><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>903</LINE></wait8>
+  <wait9><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>928</LINE></wait9>
+  <ERROR3><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1039</LINE></ERROR3>
+  <wait10><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>953</LINE></wait10>
+  <wait11><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>978</LINE></wait11>
+  <wait12><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1009</LINE></wait12>
+  <OWReset><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1370</LINE></OWReset>
+  <OWWriteByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1416</LINE></OWWriteByte>
+  <OWWriteByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1307</LINE></OWWriteByteOD>
+  <OWResetOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1261</LINE></OWResetOD>
+  <OWReadByteOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1344</LINE></OWReadByteOD>
+  <OWWriteBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1287</LINE></OWWriteBitOD>
+  <OWWriteZeroOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1292</LINE></OWWriteZeroOD>
+  <OWWriteOneOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1295</LINE></OWWriteOneOD>
+  <OWWriteLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1310</LINE></OWWriteLoopOD>
+  <OWReadBitOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1321</LINE></OWReadBitOD>
+  <OWReadBitEndOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1339</LINE></OWReadBitEndOD>
+  <OWReadLoopOD><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1347</LINE></OWReadLoopOD>
+  <OWWriteBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1396</LINE></OWWriteBit>
+  <OWWriteZero><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1401</LINE></OWWriteZero>
+  <OWWriteOne><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1404</LINE></OWWriteOne>
+  <OWWriteLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1419</LINE></OWWriteLoop>
+  <OWReadBit><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1430</LINE></OWReadBit>
+  <OWReadBitEnd><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1448</LINE></OWReadBitEnd>
+  <OWReadByte><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1453</LINE></OWReadByte>
+  <OWReadLoop><FILE>C:\Users\Mikael Glans\Desktop\ATmega_Arduino_PROJEKT\SSD1306_128x64 Dot Matrix OLED\SSD1306_128x64 Dot Matrix OLED\SSD1306.asm</FILE><LINE>1456</LINE></OWReadLoop>
+ </LABELS>
+</ASSEMBLER_INFO>
